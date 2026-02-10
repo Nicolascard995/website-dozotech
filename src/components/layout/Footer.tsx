@@ -1,0 +1,68 @@
+'use client';
+import { useTranslations } from 'next-intl';
+import LanguageSwitcher from '@/components/atoms/LanguageSwitcher';
+import Logo from '@/components/atoms/Logo';
+
+export default function Footer() {
+    const t = useTranslations('Footer');
+    const tNav = useTranslations('Navbar');
+
+    return (
+        <footer className="bg-obsidian pt-24 pb-12 border-t border-white/5">
+            <div className="max-w-7xl mx-auto px-6">
+                <div className="bg-cyan rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden mb-24">
+                    <div className="relative z-10">
+                        <h2 className="text-4xl md:text-7xl font-black text-obsidian tracking-tighter leading-none mb-8">
+                            {t('title_part1')}<br />{t('title_part2')}
+                        </h2>
+                        <p className="text-obsidian/80 text-xl font-bold mb-10 max-w-xl mx-auto">
+                            {t('subtitle')}
+                        </p>
+                        <button className="px-12 py-6 bg-obsidian text-white font-black rounded-full text-base uppercase tracking-widest hover:scale-110 transition-all shadow-2xl">
+                            {t('cta')}
+                        </button>
+                    </div>
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[150%] bg-obsidian/5 animate-[pulse_5s_infinite] rounded-full"></div>
+                </div>
+
+                <div className="grid md:grid-cols-4 gap-12 text-slate-500 text-sm">
+                    <div className="md:col-span-2">
+                        <div className="flex items-center gap-2 mb-6">
+                            <Logo className="w-6 h-6 text-cyan" />
+                            <span className="text-white font-bold tracking-tighter uppercase">DOZO TECH</span>
+                        </div>
+                        <p className="max-w-sm">
+                            {t('brand_desc')}
+                        </p>
+                    </div>
+                    <div>
+                        <h4 className="text-white font-bold mb-6">{t('nav_title')}</h4>
+                        <ul className="space-y-4">
+                            <li><a href="#metodologia" className="hover:text-cyan">{tNav('methodology')}</a></li>
+                            <li><a href="#soluciones" className="hover:text-cyan">{tNav('solutions')}</a></li>
+                            <li><a href="#casos" className="hover:text-cyan">{tNav('cases')}</a></li>
+                            <li><a href="#blog" className="hover:text-cyan">{tNav('blog')}</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 className="text-white font-bold mb-6">{t('legal_title')}</h4>
+                        <ul className="space-y-4">
+                            <li><a href="#" className="hover:text-cyan">{t('privacy')}</a></li>
+                            <li><a href="#" className="hover:text-cyan">{t('terms')}</a></li>
+                            <li><a href="#" className="hover:text-cyan">{t('founder')}</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="max-w-7xl mx-auto px-6 mt-12 flex justify-end">
+                    <LanguageSwitcher />
+                </div>
+
+                <div className="mt-8 pt-8 border-t border-white/5 flex justify-between items-center text-[10px] text-slate-600 uppercase tracking-widest">
+                    <span>{t('rights')}</span>
+                    <span>{t('tagline')}</span>
+                </div>
+            </div>
+        </footer>
+    );
+}

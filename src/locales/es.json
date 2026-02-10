@@ -1,0 +1,208 @@
+{
+  "Navbar": {
+    "methodology": "Cómo lo hago",
+    "solutions": "Herramientas",
+    "cases": "Resultados",
+    "blog": "Criterio",
+    "audit": "Auditoría Gratis"
+  },
+  "Hero": {
+    "title_part1": "Vende más.",
+    "title_part2": "Gana más.",
+    "subtitle_prefix": "Si el salón está lleno pero la caja no sube, tu restaurante",
+    "subtitle_highlight": "pierde dinero",
+    "subtitle_suffix": ". Yo detengo esa fuga desde fuera de tu operación, sin pisar tu cocina ni interferir en tu gestión diaria.",
+    "remote": "100% remoto. Operación invisible.",
+    "cta": "Recuperar mi margen"
+  },
+  "FounderBanner": {
+    "text": "• PROGRAMA PIONEROS: BUSCO MIS PRIMEROS 5 CASOS DE ÉXITO • AUDITORÍA SIN RIESGO • SIN ACCESO A TUS IMPUESTOS •"
+  },
+  "About": {
+    "badge": "Cocinero + Data Head",
+    "title": "Hablo sucio en la cocina. Hablo claro en los números.",
+    "description1": "No soy un consultor de escritorio. He fundado dark kitchens y dirigido brigadas desde Tulum hasta Alemania. Conozco el calor del servicio y la rabia de trabajar gratis porque los costos no cierran.",
+    "quote": "\"La comida buena no se vende sola. Se vende si deja dinero real en tu bolsillo.\"",
+    "description2": "Uní la disciplina del fine dining con el álgebra lineal. Mi trabajo es que tú te concentres en el pase mientras yo me aseguro de que cada ticket facture beneficio neto, no solo facturación bruta.",
+    "image_quote": "Hablo tu idioma: Oído cocina. Oído caja.",
+    "efficiency_label": "Cupos de Pionero Libres"
+  },
+  "Methodology": {
+    "title": "Tú cocinas. Yo me encargo de mi línea: la automatización.",
+    "subtitle": "Trabajo en segundo plano. El sistema opera en silencio para que el control deje de ser una carga y vuelva a ser tranquilidad.",
+    "steps": {
+      "01": {
+        "title": "Auditoría Digital",
+        "desc": "Una gran parte de las decisiones se toman desde el móvil. Si no estás presente ahí, elegirán a otro. Analizo tu presencia y tus canales digitales: qué dicen de ti, dónde hablan de ti y dónde se pierde demanda antes de llegar a la caja, sin interferir en tu operación diaria."
+      },
+      "02": {
+        "title": "No-Show Killer",
+        "desc": "Reducimos los no-shows y hacemos que las reservas se conviertan en mesas ocupadas. Adaptado a tus canales y a tu forma de trabajar. Menos sillas vacías, más ingresos reales."
+      },
+      "03": {
+        "title": "Tranquilidad Operativa",
+        "desc": "Visualizamos dónde se va el dinero y qué partes del negocio sostienen realmente la caja. Supervisión continua, sin suposiciones y sin que tengas que estar encima.",
+        "cta": "Ver mi diagnóstico"
+      }
+    }
+  },
+  "solutions": {
+    "badge": "Control Silencioso",
+    "title": "Detén la pérdida invisible.",
+    "radar": {
+      "id": "radar",
+      "title": "Radiografía de Rentabilidad",
+      "desc": "Visualizamos dónde se va el dinero y qué partes del negocio realmente sostienen la caja. Sin suposiciones, sin interferencias.",
+      "cta": "Ver mi diagnóstico"
+    },
+    "shield": {
+      "id": "shield",
+      "title": "Protección de Ingresos",
+      "desc": "Reducimos cancelaciones, ineficiencias y decisiones que dejan sillas o dinero en el aire. Cada ajuste busca estabilidad real.",
+      "cta": "Proteger mi caja"
+    },
+    "tranquilidad": {
+      "id": "tranquilidad",
+      "title": "Tranquilidad Operativa",
+      "desc": "El negocio bajo control incluso cuando no estás. Menos ruido mental, más claridad y más disfrute del oficio.",
+      "cta": "Recuperar el control"
+    },
+    "results": {
+      "title": "Resultados del sistema en operación.",
+      "subtitle": "Lo que ocurre cuando se deja de adivinar y se toman decisiones con criterio.",
+      "revenue": {
+        "value": "+25%",
+        "label": "Beneficio Neto"
+      },
+      "tables": {
+        "value": "-60%",
+        "label": "Capacidad Desaprovechada"
+      }
+    }
+  },
+  "Blog": {
+    "badge": "Criterio y Datos",
+    "title": "Entrenando el instinto.",
+    "read_more": "Leer más",
+    "posts": {
+      "0": {
+        "title": "¿Por qué tu plato estrella te está arruinando?",
+        "tag": "Márgenes",
+        "time": "5 min"
+      },
+      "1": {
+        "title": "La mentira de las mesas llenas: Cómo perder dinero con el salón a tope.",
+        "tag": "Estrategia",
+        "time": "8 min"
+      },
+      "2": {
+        "title": "Operación Silenciosa: Optimiza tu margen sin atraer miradas.",
+        "tag": "Discreción",
+        "time": "4 min"
+      }
+    }
+  },
+  "Footer": {
+    "title_part1": "Deja de trabajar",
+    "title_part2": "para tus proveedores.",
+    "subtitle": "Cada día que abres sin control, tu beneficio se evapora. Blindemos tu negocio hoy mismo.",
+    "cta": "Solicitar Diagnóstico Discreto",
+    "brand_desc": "Consultoría de alta precisión. Sin humo, sin invasión. Sistemas que transforman datos en márgenes reales para dueños que quieren ganar más.",
+    "nav_title": "Navegación",
+    "legal_title": "Legal",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "founder": "Data Head",
+    "rights": "© 2026 DOZO TECH • ALL RIGHTS RESERVED",
+    "tagline": "SYSTEMS THAT BREATHE"
+  },
+  "Metadata": {
+    "keywords": "Consultoría Gastronómica, Margen Restaurante, Auditoría Costos, Rentabilidad Real, Gestión Discreta"
+  },
+  "ShieldCalculator": {
+    "title_input": "Deja de quemar dinero.",
+    "label_name": "Nombre del Restaurante",
+    "label_city": "Ciudad",
+    "label_ticket": "Ticket Medio (€)",
+    "label_noshows": "No-Shows / Semana",
+    "action_calculate": "Calcular Pérdida",
+    "result_prefix": "Estás perdiendo aprox.",
+    "result_suffix": "al año en sillas vacías.",
+    "upgrade_title": "Detén esta fuga ya.",
+    "upgrade_desc": "Recibe el cálculo preciso (ocupación, temporadas) y el script de WhatsApp para reducir esto un 40%.",
+    "action_unlock": "Desbloquear Kit",
+    "email_title": "Envíame la solución.",
+    "email_desc": "Te enviaré la Calculadora Avanzada y el Script Anti-No-Show inmediatamente.",
+    "action_send_me": "Enviar Kit Ahora",
+    "action_back": "Volver",
+    "action_recalc": "Calcular de nuevo",
+    "success_message": "¡Enviado! Revisa tu correo."
+  },
+  "ShieldSection": {
+    "badge": "No-Show Killer",
+    "title_part1": "Protege tus",
+    "title_part2": "ingresos",
+    "description": "Cada mesa vacía es dinero que nunca recuperas. Usa la calculadora para ver exactamente cuánto te cuestan los 'no-shows' al año, y obtén la herramienta para detenerlo."
+  },
+  "RadarQuiz": {
+    "intro_title": "¿Eres invisible?",
+    "intro_desc": "El 70% de los comensales decide online antes de entrar. Si tu huella digital es débil, estás regalando clientes a tu competencia ahora mismo.",
+    "intro_btn": "Iniciar Test de 1 Min",
+    "question_prefix": "Pregunta",
+    "q1_gmaps": "¿Apareces en Google Maps al buscar 'restaurante cerca de mí'?",
+    "q2_menu": "¿Tu menú tiene fotos actualizadas de los últimos 60 días?",
+    "q3_reviews": "¿Respondes a las reseñas negativas en menos de 24h?",
+    "q4_rating": "¿Tu puntuación media es superior a 4.3 estrellas?",
+    "q5_speed": "¿Tu web carga en menos de 3 segundos en móvil?",
+    "btn_yes": "Sí",
+    "btn_no": "No / No sé",
+    "gate_title": "Cálculo Completado",
+    "gate_desc": "¿A dónde enviamos tu Informe de Visibilidad Digital completo?",
+    "gate_placeholder_name": "Nombre del Restaurante",
+    "gate_placeholder_email": "Email del Dueño",
+    "gate_btn": "Revelar mi Puntuación",
+    "result_label": "Estado de Visibilidad",
+    "tier_visible": "Visible",
+    "tier_partial": "Modo Fantasma",
+    "tier_invisible": "Invisible",
+    "desc_visible": "Buen trabajo. Actúas como un Pro. Optimicemos márgenes ahora.",
+    "desc_partial": "Estás perdiendo dinero. Los clientes te encuentran, pero eligen a otro.",
+    "desc_invisible": "Emergencia. Simplemente no existes para el comensal moderno.",
+    "result_cta": "Solucionar Esto"
+  },
+  "ControlQualify": {
+    "badge": "Aplicación Programa Pionero",
+    "intro_title": "¿Eres dueño de tu negocio o el negocio te posee a ti?",
+    "intro_desc": "La mayoría de restauradores son empleados de su propio restaurante. Trabajan el doble y ganan la mitad. El Programa Pionero instala sistemas de control para que tú recuperes tu vida.",
+    "intro_btn": "Aplicar al Programa",
+    "benefit_1_title": "Libertad",
+    "benefit_1_desc": "Sal de la operación diaria",
+    "benefit_2_title": "Control",
+    "benefit_2_desc": "Números claros en tiempo real",
+    "benefit_3_title": "Crecimiento",
+    "benefit_3_desc": "Escala sin caos",
+    "q1_title": "¿Cuál es tu rol principal?",
+    "role_owner": "Dueño / Fundador",
+    "role_manager": "Gerente General",
+    "role_investor": "Inversionista",
+    "role_chef": "Chef Ejecutivo",
+    "q2_title": "¿Cuál es tu facturación mensual promedio?",
+    "month": "mes",
+    "q3_title": "¿Qué te quita el sueño ahora mismo?",
+    "pain_chaos": "Caos Operativo (Apagar fuegos)",
+    "pain_profit": "Márgenes Bajos (Mucho trabajo, poco dinero)",
+    "pain_time": "Falta de Tiempo (Vivo en el restaurante)",
+    "pain_scaling": "Dificultad para Escalar (Abrir más locales)",
+    "q4_title": "Último paso. ¿Dónde te enviamos la auditoría?",
+    "q4_desc": "Analizaremos tu perfil y si encajas, te contactaremos para una sesión estratégica gratuita.",
+    "label_name": "Tu Nombre Completo",
+    "label_email": "Tu Mejor Email",
+    "label_phone": "WhatsApp (Opcional)",
+    "success_title": "Solicitud Recibida",
+    "success_desc": "Hemos recibido tus datos correctamente. Nuestro equipo revisará tu perfil en las próximas 24 horas.",
+    "close": "Cerrar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "finish": "Enviar Solicitud"
+  }
+}

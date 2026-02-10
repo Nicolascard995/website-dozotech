@@ -1,0 +1,208 @@
+{
+  "Navbar": {
+    "methodology": "Methodik",
+    "solutions": "Lösungen",
+    "cases": "Fälle",
+    "blog": "Blog",
+    "audit": "Termin vereinbaren"
+  },
+  "Hero": {
+    "title_part1": "Mehr verkaufen.",
+    "title_part2": "Mehr verdienen.",
+    "subtitle_prefix": "Wenn der Gastraum voll ist, aber die Kasse nicht klingelt, Ihr Restaurant",
+    "subtitle_highlight": "verliert Geld",
+    "subtitle_suffix": ". Ich stoppe dieses Leck von außerhalb Ihres Betriebs, ohne Ihre Küche zu betreten oder Ihr Tagesgeschäft zu stören.",
+    "remote": "100% Remote. Unsichtbarer Betrieb.",
+    "cta": "Marge zurückgewinnen"
+  },
+  "FounderBanner": {
+    "text": "• PIONIER-PROGRAMM: SUCHE MEINE ERSTEN 5 ERFOLGSGESCHICHTEN • KOSTENLOSES AUDIT • KEIN RISIKO • BEGRENZTE PLÄTZE •"
+  },
+  "About": {
+    "badge": "Culinary Data Scientist",
+    "title": "In der Küche getestet. Durch Algorithmen veredelt.",
+    "description1": "Ich bin kein Schreibtischtäter. Ich habe während der Pandemie eine Dark Kitchen gegründet und Teams von Tulum bis Lüneburg geleitet. Ich kenne den Druck des Service und die kalte Realität der Daten.",
+    "quote": "\"Ich habe Gastronomie-Erfahrung mit Data Science kombiniert, um das Raten in der Kalkulation zu beenden.\"",
+    "description2": "Daten sind das neue Mise en Place. Ich habe mein Handwerk professionalisiert, damit Sie sich auf das Kochen konzentrieren können, während ich dafür sorge, dass jedes Gericht zu Ihrem Gewinn beiträgt.",
+    "image_quote": "Ich kenne Ihren Alltag. Ich kenne Ihre Zahlen.",
+    "efficiency_label": "Pionier-Plätze frei"
+  },
+  "Methodology": {
+    "title": "Sie kochen. Ich kümmere mich um meinen Bereich: die Automatisierung.",
+    "subtitle": "Ich arbeite im Hintergrund. Das System operiert geräuschlos, damit Kontrolle keine Last mehr ist, sondern wieder für Ruhe sorgt.",
+    "steps": {
+      "01": {
+        "title": "Digitales Audit",
+        "desc": "Die meisten Entscheidungen fallen am Handy. Wenn Sie dort nicht präsent sind, wählt der Gast die Konkurrenz. Ich analysiere Ihre Präsenz und digitalen Kanäle: Was man über Sie sagt und wo Potenzial verloren geht, bevor es die Kasse erreicht – ohne Ihren täglichen Betrieb zu stören."
+      },
+      "02": {
+        "title": "No-Show Killer",
+        "desc": "Wir minimieren Stornierungen und machen aus Reservierungen belegte Tische. Angepasst an Ihre Kanäle und Ihre Arbeitsweise. Weniger leere Plätze, mehr echte Einnahmen."
+      },
+      "03": {
+        "title": "Operative Ruhe",
+        "desc": "Wir machen sichtbar, wohin das Geld fließt und welche Unternehmensteile den Umsatz wirklich stützen. Kontinuierliche Überwachung, ohne Vermutungen und ohne dass Sie ständig präsent sein müssen.",
+        "cta": "Diagnose ansehen"
+      }
+    }
+  },
+  "solutions": {
+    "badge": "Stille Kontrolle",
+    "title": "Stoppen Sie den unsichtbaren Verlust.",
+    "radar": {
+      "id": "radar",
+      "title": "Rentabilitäts-Röntgen",
+      "desc": "Wir visualisieren, wohin das Geld fließt und welche Unternehmensteile die Kasse wirklich stützen. Ohne Vermutungen, ohne Störungen.",
+      "cta": "Diagnose ansehen"
+    },
+    "shield": {
+      "id": "shield",
+      "title": "Einnahmeschutz",
+      "desc": "Wir reduzieren Stornierungen, Ineffizienzen und Entscheidungen, die Plätze oder Geld ungenutzt lassen. Jede Anpassung zielt auf echte Stabilität ab.",
+      "cta": "Kasse schützen"
+    },
+    "tranquilidad": {
+      "id": "tranquilidad",
+      "title": "Operative Ruhe",
+      "desc": "Ihr Geschäft unter Kontrolle, auch wenn Sie nicht da sind. Weniger mentaler Lärm, mehr Klarheit und mehr Freude am Handwerk.",
+      "cta": "Kontrolle zurückgewinnen"
+    },
+    "results": {
+      "title": "Ergebnisse des Systems im Betrieb.",
+      "subtitle": "Was passiert, wenn man aufhört zu raten und anfängt, Entscheidungen mit System zu treffen.",
+      "revenue": {
+        "value": "+25%",
+        "label": "Nettogewinn"
+      },
+      "tables": {
+        "value": "-60%",
+        "label": "Ungenutzte Kapazität"
+      }
+    }
+  },
+  "Blog": {
+    "badge": "Wissensdatenbank",
+    "title": "Instinkt trainieren.",
+    "read_more": "Mehr lesen",
+    "posts": {
+      "0": {
+        "title": "Warum Ihr Bestseller Sie ruinieren könnte?",
+        "tag": "Rentabilität",
+        "time": "5 min"
+      },
+      "1": {
+        "title": "Die Lüge der vollen Tische: Umsatz ist nicht gleich Gewinn.",
+        "tag": "Strategie",
+        "time": "8 min"
+      },
+      "2": {
+        "title": "Algebra in der Küche: Warum Daten wichtiger sind als das Rezept.",
+        "tag": "Methodik",
+        "time": "4 min"
+      }
+    }
+  },
+  "Footer": {
+    "title_part1": "Beenden Sie den",
+    "title_part2": "Gewinnverlust.",
+    "subtitle": "Jeder Tag ohne System kostet Sie Marge. Handeln Sie heute und sichern Sie Ihren Erfolg.",
+    "cta": "Kostenloses Audit anfordern",
+    "brand_desc": "Systeme, die atmen. Hochpräzise Beratung für den Gastronomiesektor. Wir verwandeln Daten in reale Gewinnmargen.",
+    "nav_title": "Navigation",
+    "legal_title": "Rechtliches",
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "founder": "Founding Partner",
+    "rights": "© 2026 DOZO TECH • ALL RIGHTS RESERVED",
+    "tagline": "SYSTEMS THAT BREATHE"
+  },
+  "Metadata": {
+    "keywords": "Gastro-Consulting, Restaurant Data Intelligence, Profit Optimization, Restaurantberatung Lüneburg, Wirtschaftlichkeit"
+  },
+  "ShieldCalculator": {
+    "title_input": "Stoppen Sie den Verlust.",
+    "label_name": "Restaurant Name",
+    "label_city": "Stadt",
+    "label_ticket": "Ø Bon (€)",
+    "label_noshows": "No-Shows / Woche",
+    "action_calculate": "Verlust Berechnen",
+    "result_prefix": "Sie verlieren ca.",
+    "result_suffix": "pro Jahr durch leere Stühle.",
+    "upgrade_title": "Stoppen Sie das Leck.",
+    "upgrade_desc": "Erhalten Sie die präzise Berechnung (Auslastung, Saison) und das WhatsApp-Skript, um dies um 40% zu senken.",
+    "action_unlock": "Kit Freischalten",
+    "email_title": "Senden Sie mir die Lösung.",
+    "email_desc": "Ich sende Ihnen den Erweiterten Rechner und das Anti-No-Show-Skript sofort zu.",
+    "action_send_me": "Kit Jetzt Senden",
+    "action_back": "Zurück",
+    "action_recalc": "Neu berechnen",
+    "success_message": "Gesendet! Prüfen Sie Ihren Posteingang."
+  },
+  "ShieldSection": {
+    "badge": "No-Show Killer",
+    "title_part1": "Schützen Sie Ihren",
+    "title_part2": "Umsatz",
+    "description": "Jeder leere Tisch ist Geld, das Sie nie zurückbekommen. Nutzen Sie den Rechner, um genau zu sehen, wie viel Sie 'No-Shows' jährlich kosten, und holen Sie sich das Tool, um es zu stoppen."
+  },
+  "RadarQuiz": {
+    "intro_title": "Sind Sie unsichtbar?",
+    "intro_desc": "70% der Gäste entscheiden online. Wenn Ihr digitaler Fußabdruck schwach ist, verlieren Sie genau jetzt Umsatz an die Konkurrenz.",
+    "intro_btn": "1-Min Audit Starten",
+    "question_prefix": "Frage",
+    "q1_gmaps": "Erscheinen Sie bei Google Maps unter 'Restaurant in meiner Nähe'?",
+    "q2_menu": "Ist Ihr Menü mit Fotos der letzten 60 Tage aktualisiert?",
+    "q3_reviews": "Antworten Sie auf negative Bewertungen in < 24h?",
+    "q4_rating": "Liegt Ihre Bewertung über 4.3 Sterne?",
+    "q5_speed": "Lädt Ihre Website mobil in unter 3 Sekunden?",
+    "btn_yes": "Ja",
+    "btn_no": "Nein / Unsicher",
+    "gate_title": "Berechnung Abgeschlossen",
+    "gate_desc": "Wohin sollen wir Ihren vollständigen Sichtbarkeitsbericht senden?",
+    "gate_placeholder_name": "Name des Restaurants",
+    "gate_placeholder_email": "E-Mail des Inhabers",
+    "gate_btn": "Ergebnis Anzeigen",
+    "result_label": "Sichtbarkeitsstatus",
+    "tier_visible": "Sichtbar",
+    "tier_partial": "Geister-Modus",
+    "tier_invisible": "Unsichtbar",
+    "desc_visible": "Gute Arbeit. Ein Pro. Lassen Sie uns jetzt die Marge optimieren.",
+    "desc_partial": "Sie verlieren Geld. Gäste finden Sie, wählen aber andere.",
+    "desc_invisible": "Notfall. Sie existieren für den modernen Gast einfach nicht.",
+    "result_cta": "Jetzt Beheben"
+  },
+  "ControlQualify": {
+    "badge": "Pionier-Programm Bewerbung",
+    "intro_title": "Besitzen Sie Ihr Geschäft oder besitzt es Sie?",
+    "intro_desc": "Die meisten Gastronomen sind Angestellte ihres eigenen Restaurants. Doppelte Arbeit, halber Lohn. Das Pionier-Programm installiert Kontrollsysteme, damit Sie Ihr Leben zurückbekommen.",
+    "intro_btn": "Für Programm bewerben",
+    "benefit_1_title": "Freiheit",
+    "benefit_1_desc": "Raus aus dem Tagesgeschäft",
+    "benefit_2_title": "Kontrolle",
+    "benefit_2_desc": "Klare Zahlen in Echtzeit",
+    "benefit_3_title": "Wachstum",
+    "benefit_3_desc": "Skalieren ohne Chaos",
+    "q1_title": "Was ist Ihre primäre Rolle?",
+    "role_owner": "Inhaber / Gründer",
+    "role_manager": "Geschäftsführer",
+    "role_investor": "Investor",
+    "role_chef": "Küchenchef",
+    "q2_title": "Wie hoch ist Ihr durchschnittlicher Monatsumsatz?",
+    "month": "Monat",
+    "q3_title": "Was bereitet Ihnen schlaflose Nächte?",
+    "pain_chaos": "Operatives Chaos (Feuer löschen)",
+    "pain_profit": "Geringe Margen (Viel Arbeit, wenig Geld)",
+    "pain_time": "Zeitmangel (Ich lebe im Restaurant)",
+    "pain_scaling": "Skalierungsprobleme (Neue Standorte)",
+    "q4_title": "Letzter Schritt. Wohin sollen wir das Audit senden?",
+    "q4_desc": "Wir analysieren Ihr Profil und melden uns bei Eignung für eine kostenlose Strategiesitzung.",
+    "label_name": "Vollständiger Name",
+    "label_email": "Beste E-Mail",
+    "label_phone": "WhatsApp (Optional)",
+    "success_title": "Bewerbung Erhalten",
+    "success_desc": "Wir haben Ihre Daten erfolgreich erhalten. Unser Team prüft Ihr Profil innerhalb der nächsten 24 Stunden.",
+    "close": "Schließen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "finish": "Bewerbung Absenden"
+  }
+}

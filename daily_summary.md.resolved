@@ -1,0 +1,59 @@
+# Resumen de Progreso - Dozo Tech (07 Feb)
+
+Hoy completamos la implementación total del **Design Spec "Neon Vanguard"**. El sitio ha evolucionado visual y funcionalmente hacia una estética "High-Contrast & Tech-Forward".
+
+## 1. Identidad Visual & Design System
+- **Nueva Paleta**: Oscuro absoluto (Obsidian `#0a0a0a`) con acentos disruptivos en Acid Lime (`#d4ff00`).
+- **Tipografía**: Combinación técnica y moderna con `Bricolage Grotesque` (Títulos), `Geist` (Cuerpo) y `JetBrains Mono` (Datos).
+- **Tailwind v4**: Configuración optimizada con variables CSS nativas (`@theme`).
+
+## 2. Micro-Interacciones & FX (Core Motion)
+Creamos componentes reutilizables para dar vida a la interfaz:
+- **ScrollReveal**: Animación de entrada escalonada para secciones y tarjetas.
+- **TiltCard**: Efecto 3D holográfico con "brillo de neón" al pasar el mouse.
+- **Visual Flow**: Línea conectora SVG animada en la sección de Metodología.
+
+## 3. Refinamiento de Componentes
+- **Hero**: Título con aberración cromática (glitch), indicador de scroll animado y loop de video suavizado.
+- **About**: Tarjeta 3D giratoria (Chef/Consultor) y Badge de "Pioneros" con pulso de neón.
+- **Soluciones**: Grid estilo Bento con efecto spotlight y tilt en cada tarjeta.
+
+## 4. Internacionalización (i18n) & SEO
+- **Tono Ajustado**:
+    - **ES**: "Crudo, empático" (Chef-to-Chef).
+    - **EN**: "Health Inspector / Data Hygiene".
+    - **DE**: "Wirtschaftlichkeit" (Eficiencia Matemática).
+- **SEO Técnico**: Implementación de `JSON-LD` para estructurar datos como "Auditoría Gastronómica".
+
+---
+
+# Resumen de Progreso - Dozo Tech (06 Feb)
+
+Hemos avanzado significativamente en la estructura, diseño y funcionalidad del sitio. Aquí tienes el estado actual para retomar mañana.
+
+## 1. Refactorización e Internacionalización
+- **Arquitectura**: Se dividió la Landing Page en componentes atómicos ([Hero](file:///home/dozotech/dozo_tech/src/components/sections/Hero.tsx#5-81), [About](file:///home/dozotech/dozo_tech/src/components/sections/AboutSection.tsx#6-96), `Methodology`, etc.) para mantener el código limpio.
+- **Idiomas**: Sistema funcional en **Español (ES), Inglés (EN) y Alemán (DE)**.
+    - [LanguageSwitcher](file:///home/dozotech/dozo_tech/src/components/atoms/LanguageSwitcher.tsx#6-40) integrado en Navbar y Footer.
+    - Links del Footer sincronizados dinámicamente con los del Navbar.
+- **Guía**: Se generó un documento paso a paso para que puedas editar las traducciones a tu ritmo.
+
+## 2. Hero Section (Video)
+- Se reemplazó el fondo estático por el video [Chef_s_Kitchen_Pass_Timelapse_Video.mp4](file:///home/dozotech/dozo_tech/public/video/Chef_s_Kitchen_Pass_Timelapse_Video.mp4).
+- Configurado con `autoplay`, `loop`, `muted` y una capa oscura para garantizar que el texto resalte.
+
+## 3. Sección "About" (Efecto Flip 3D)
+Logramos una transición interactiva y visualmente potente:
+- **Efecto Carta**: La foto del Chef gira 180° para revelar al Consultor.
+- **Lógica Híbrida**:
+    1.  **Automática**: Gira sola 1 segundo después de aparecer en pantalla.
+    2.  **Manual**: El usuario puede hacer clic para girarla las veces que quiera.
+- **Correcciones**:
+    - Se arregló el texto "invertido" del reverso.
+    - Se ajustó la posición de la foto del Consultor (`75%`) para un encuadre perfecto.
+
+## Estado del Proyecto
+- **Servidor**: Corriendo estable en `localhost:3000`.
+- **Código**: Limpio, tipado en TypeScript y usando `framer-motion` para las animaciones.
+
+¡Todo listo para la siguiente fase!

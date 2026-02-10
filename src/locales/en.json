@@ -1,0 +1,208 @@
+{
+  "Navbar": {
+    "methodology": "Methodology",
+    "solutions": "Solutions",
+    "cases": "Cases",
+    "blog": "Blog",
+    "audit": "Book Audit"
+  },
+  "Hero": {
+    "title_part1": "Sell more.",
+    "title_part2": "Earn more.",
+    "subtitle_prefix": "If the tables are full but the cash isn't growing, your restaurant",
+    "subtitle_highlight": "is losing money",
+    "subtitle_suffix": ". I stop that leak from outside your operation, without stepping into your kitchen or interfering with your daily management.",
+    "remote": "100% remote. Silent operation.",
+    "cta": "Reclaim my margin"
+  },
+  "FounderBanner": {
+    "text": "• PIONEER PROGRAM: SEEKING MY FIRST 5 SUCCESS STORIES • NO-RISK AUDIT • NO TAX ACCESS REQUIRED •"
+  },
+  "About": {
+    "badge": "Chef + Data Head",
+    "title": "Kitchen-tested. Data-refined.",
+    "description1": "I am not a corporate consultant. I’ve founded dark kitchens and led brigades from Tulum to Germany. I know the heat of the service and the frustration of working for free because the costs don't add up.",
+    "quote": "\"Good food doesn't sell itself. It sells if it leaves real money in your pocket.\"",
+    "description2": "I merged fine dining discipline with linear algebra. My job is to let you focus on the pass while I ensure every ticket generates net profit, not just gross revenue.",
+    "image_quote": "I speak your language: Order up. Margin up.",
+    "efficiency_label": "Pioneer Spots Open"
+  },
+  "Methodology": {
+    "title": "You cook. I handle my line: automation.",
+    "subtitle": "I work in the background. The system operates in silence so that control stops being a burden and becomes peace of mind again.",
+    "steps": {
+      "01": {
+        "title": "Digital Audit",
+        "desc": "Most decisions are made on mobile. If you aren't present there, they will choose someone else. I analyze your presence and digital channels: what they say about you, where they talk about you, and where demand is lost before reaching the register, without interfering with your daily operation."
+      },
+      "02": {
+        "title": "No-Show Killer",
+        "desc": "We slash no-shows and ensure bookings turn into occupied tables. Adapted to your channels and your way of working. Fewer empty chairs, more real income."
+      },
+      "03": {
+        "title": "Operational Peace",
+        "desc": "We visualize where the money goes and which parts of the business truly sustain the cash flow. Continuous supervision, no guesswork, and no need for you to be constantly on top of it.",
+        "cta": "See my diagnosis"
+      }
+    }
+  },
+  "solutions": {
+    "badge": "Silent Control",
+    "title": "Stop the invisible loss.",
+    "radar": {
+      "id": "radar",
+      "title": "Profitability X-ray",
+      "desc": "We visualize where the money goes and which parts of the business truly sustain the cash flow. No guesses, no interference.",
+      "cta": "See my diagnosis"
+    },
+    "shield": {
+      "id": "shield",
+      "title": "Income Protection",
+      "desc": "We reduce cancellations, inefficiencies, and decisions that leave chairs or money in the air. Every adjustment seeks real stability.",
+      "cta": "Protect my cash"
+    },
+    "tranquilidad": {
+      "id": "tranquilidad",
+      "title": "Operational Peace",
+      "desc": "Your business under control even when you are away. Less mental noise, more clarity, and more enjoyment of your craft.",
+      "cta": "Reclaim control"
+    },
+    "results": {
+      "title": "System results in operation.",
+      "subtitle": "What happens when you stop guessing and start making decisions with criteria.",
+      "revenue": {
+        "value": "+25%",
+        "label": "Net Profit"
+      },
+      "tables": {
+        "value": "-60%",
+        "label": "Underutilized Capacity"
+      }
+    }
+  },
+  "Blog": {
+    "badge": "Data & Insight",
+    "title": "Training the instinct.",
+    "read_more": "Read more",
+    "posts": {
+      "0": {
+        "title": "Why your star dish is ruining you?",
+        "tag": "Margins",
+        "time": "5 min"
+      },
+      "1": {
+        "title": "The lie of full tables: How to lose money with a full house.",
+        "tag": "Strategy",
+        "time": "8 min"
+      },
+      "2": {
+        "title": "Silent Operation: Optimize your margin without attracting prying eyes.",
+        "tag": "Discretion",
+        "time": "4 min"
+      }
+    }
+  },
+  "Footer": {
+    "title_part1": "Stop working",
+    "title_part2": "for your suppliers.",
+    "subtitle": "Every day you open without control, your profit evaporates. Let’s shield your business today.",
+    "cta": "Request Discrete Diagnosis",
+    "brand_desc": "High-precision consulting. No fluff, no invasion. Systems that transform data into real margins for owners who want to earn more.",
+    "nav_title": "Navigation",
+    "legal_title": "Legal",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "founder": "Data Head",
+    "rights": "© 2026 DOZO TECH • ALL RIGHTS RESERVED",
+    "tagline": "SYSTEMS THAT BREATHE"
+  },
+  "Metadata": {
+    "keywords": "Gastro-Consulting, Restaurant Margin, Cost Audit, Profit Optimization, Discrete Management"
+  },
+  "ShieldCalculator": {
+    "title_input": "Stop burning cash.",
+    "label_name": "Restaurant Name",
+    "label_city": "City",
+    "label_ticket": "Avg. Ticket (€)",
+    "label_noshows": "No-Shows / Week",
+    "action_calculate": "Calculate Loss",
+    "result_prefix": "You are losing approx.",
+    "result_suffix": "per year in empty chairs.",
+    "upgrade_title": "Stop this leak now.",
+    "upgrade_desc": "Get the precise calculation (occupancy, seasons) and the copy-paste WhatsApp script to reduce this by 40%.",
+    "action_unlock": "Unlock Full Kit",
+    "email_title": "Send me the solution.",
+    "email_desc": "I will send you the Advanced Calculator and the Anti-No-Show Script immediately.",
+    "action_send_me": "Send Kit Now",
+    "action_back": "Back",
+    "action_recalc": "Calculate again",
+    "success_message": "Sent! Check your inbox."
+  },
+  "ShieldSection": {
+    "badge": "No-Show Killer",
+    "title_part1": "Protect your",
+    "title_part2": "revenue",
+    "description": "Every empty table is money you never get back. Use the calculator to see exactly how much your 'no-shows' are costing you annually, and get the tool to stop it."
+  },
+  "RadarQuiz": {
+    "intro_title": "Are you invisible?",
+    "intro_desc": "70% of diners decide online before walking in. If your digital footprint is weak, you are losing customers to the competition right now.",
+    "intro_btn": "Start 1-Min Audit",
+    "question_prefix": "Question",
+    "q1_gmaps": "Do you show up on Google Maps when searching for 'restaurant near me'?",
+    "q2_menu": "Is your menu updated with photos from the last 60 days?",
+    "q3_reviews": "Do you respond to negative reviews in less than 24h?",
+    "q4_rating": "Is your average rating above 4.3 stars?",
+    "q5_speed": "Does your website load in under 3 seconds on mobile?",
+    "btn_yes": "Yes",
+    "btn_no": "No / Unsure",
+    "gate_title": "Calculation Complete",
+    "gate_desc": "Where should we send your full Digital Visibility Report?",
+    "gate_placeholder_name": "Restaurant Name",
+    "gate_placeholder_email": "Owner's Email",
+    "gate_btn": "Reveal My Score",
+    "result_label": "Visibility Status",
+    "tier_visible": "Visible",
+    "tier_partial": "Ghost Mode",
+    "tier_invisible": "Invisible",
+    "desc_visible": "Great work. You act like a Pro. Let's optimize margins now.",
+    "desc_partial": "You are losing money. Customers find you, but choose someone else.",
+    "desc_invisible": "Emergency. You simply do not exist for the modern diner.",
+    "result_cta": "Fix This Now"
+  },
+  "ControlQualify": {
+    "badge": "Pioneer Program Application",
+    "intro_title": "Do you own your business, or does it own you?",
+    "intro_desc": "Most restaurateurs are employees of their own restaurant. Working double, earning half. The Pioneer Program installs control systems so you reclaim your life.",
+    "intro_btn": "Apply for Program",
+    "benefit_1_title": "Freedom",
+    "benefit_1_desc": "Exit daily ops",
+    "benefit_2_title": "Control",
+    "benefit_2_desc": "Clear numbers in real-time",
+    "benefit_3_title": "Growth",
+    "benefit_3_desc": "Scale without chaos",
+    "q1_title": "What is your primary role?",
+    "role_owner": "Owner / Founder",
+    "role_manager": "General Manager",
+    "role_investor": "Investor",
+    "role_chef": "Executive Chef",
+    "q2_title": "What is your average monthly revenue?",
+    "month": "month",
+    "q3_title": "What keeps you awake at night?",
+    "pain_chaos": "Operational Chaos (Putting out fires)",
+    "pain_profit": "Low Margins (High work, low cash)",
+    "pain_time": "Lack of Time (Living at work)",
+    "pain_scaling": "Scaling Issues (Opening new spots)",
+    "q4_title": "Last step. Where should we send the audit?",
+    "q4_desc": "We will analyze your profile and if you fit, we'll contact you for a free strategy session.",
+    "label_name": "Full Name",
+    "label_email": "Best Email",
+    "label_phone": "WhatsApp (Optional)",
+    "success_title": "Application Received",
+    "success_desc": "We have successfully received your data. Our team will review your profile within the next 24 hours.",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "finish": "Submit Application"
+  }
+}

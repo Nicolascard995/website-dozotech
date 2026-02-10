@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-display: var(--font-bricolage);
+  --font-mono: var(--font-jetbrains-mono);
+
+  --color-obsidian: #0a0a0a;
+  --color-surface: #111111;
+  --color-acid-lime: #d4ff00;
+  --color-cyan: #2cfad6;
+
+  --color-background: var(--color-obsidian);
+  --color-foreground: #f6f4f0;
+
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+      transform: translateY(-20px) rotate(5deg);
+    }
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/5;
+  }
+
+  .glass-panel {
+    @apply bg-[#111111]/80 backdrop-blur-xl border border-white/10;
+  }
+
+  .neon-text {
+    text-shadow: 0 0 10px rgba(212, 255, 0, 0.5);
+  }
+
+  .neon-border {
+    box-shadow: 0 0 10px rgba(212, 255, 0, 0.3);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: var(--color-obsidian);
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #262626;
+    border-radius: 99px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: var(--color-acid-lime);
+  }
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    color: white;
+  }
+
+  ::selection {
+    background-color: var(--color-acid-lime);
+    color: var(--color-obsidian);
+  }
+}
