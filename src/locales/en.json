@@ -28,62 +28,93 @@
     "efficiency_label": "Pioneer Spots Open"
   },
   "Methodology": {
-    "title": "You cook. I handle my line: automation.",
-    "subtitle": "I work in the background. The system operates in silence so that control stops being a burden and becomes peace of mind again.",
+    "title": "Digital Mise en Place",
+    "subtitle": "Just like in the kitchen: if there's no prep, there's no service. Before selling more, we get your house in order.",
     "steps": {
       "01": {
-        "title": "Digital Audit",
-        "desc": "Most decisions are made on mobile. If you aren't present there, they will choose someone else. I analyze your presence and digital channels: what they say about you, where they talk about you, and where demand is lost before reaching the register, without interfering with your daily operation."
+        "title": "Clean Up",
+        "desc": "We eliminate digital and operational noise. Identifying what's redundant, what's missing, and what's holding back your growth."
       },
       "02": {
-        "title": "No-Show Killer",
-        "desc": "We slash no-shows and ensure bookings turn into occupied tables. Adapted to your channels and your way of working. Fewer empty chairs, more real income."
+        "title": "Order",
+        "desc": "Data in its place. We implement measurement systems so you know exactly what's happening in your business in real-time."
       },
       "03": {
-        "title": "Operational Peace",
-        "desc": "We visualize where the money goes and which parts of the business truly sustain the cash flow. Continuous supervision, no guesswork, and no need for you to be constantly on top of it.",
+        "title": "Execution",
+        "desc": "With everything ready, we open the tap. Precise strategies on a solid foundation to scale without breaking operations.",
         "cta": "See my diagnosis"
       }
     }
   },
   "solutions": {
-    "badge": "Silent Control",
-    "title": "Stop the invisible loss.",
-    "radar": {
-      "id": "radar",
-      "title": "Profitability X-ray",
-      "desc": "We visualize where the money goes and which parts of the business truly sustain the cash flow. No guesses, no interference.",
-      "cta": "See my diagnosis"
+    "badge": "Three Systems. Three Levers.",
+    "intro": "Three systems. Three critical profitability levers. Each designed to solve a specific restaurant problem.",
+    "audit": {
+      "id": "audit",
+      "title": "Digital Audit for Restaurants",
+      "subtitle": "Detect why your restaurant loses customers before they book — and what to do to reverse it.",
+      "problem": "You have traffic and reviews, but no bookings. Over-reliance on aggregators. You don't know which channel brings money.",
+      "features": [
+        "Full digital presence audit",
+        "Benchmark against local competitors",
+        "Funnel leak detection",
+        "Actionable report (30/60/90 days)"
+      ],
+      "result": "A clear roadmap to increase bookings and reduce dependency.",
+      "target": "For restaurants wanting customers, not just likes.",
+      "cta": "Request Digital Audit"
     },
-    "shield": {
-      "id": "shield",
-      "title": "Income Protection",
-      "desc": "We reduce cancellations, inefficiencies, and decisions that leave chairs or money in the air. Every adjustment seeks real stability.",
-      "cta": "Protect my cash"
+    "noshow": {
+      "id": "noshow",
+      "title": "No-Show Killer",
+      "subtitle": "Reduce no-shows by 30-60% without hurting the customer experience.",
+      "problem": "Empty tables with staff ready. Silent losses. Lack of clear policies.",
+      "features": [
+        "No-show analysis by day/time/channel",
+        "Calculation of real revenue impact",
+        "Reservation policy design",
+        "Reminder and control system"
+      ],
+      "result": "More occupied tables, more revenue, less operational stress.",
+      "target": "For busy restaurants with revenue leaks.",
+      "cta": "Calculate no-show impact"
     },
-    "tranquilidad": {
-      "id": "tranquilidad",
-      "title": "Operational Peace",
-      "desc": "Your business under control even when you are away. Less mental noise, more clarity, and more enjoyment of your craft.",
-      "cta": "Reclaim control"
+    "efficiency": {
+      "id": "efficiency",
+      "title": "Efficiency Pro",
+      "subtitle": "Find and recover the 10–20% margin lost within your operation.",
+      "problem": "High food cost without clear explanation. Dishes without margin. Intuitive inventory.",
+      "features": [
+        "Automated sales and recipe analysis",
+        "Menu engineering (Stars, Dogs...)",
+        "Detection of negative margin dishes",
+        "Menu scenario simulation"
+      ],
+      "result": "Decisions based on numbers. More margin without increasing volume.",
+      "target": "For restaurants that sell but don't maximize profitability.",
+      "cta": "Diagnose my margin"
     },
+    "label_problem": "Problem",
+    "label_features": "Includes",
+    "label_result": "Result",
+    "label_target": "For whom",
     "results": {
-      "title": "System results in operation.",
-      "subtitle": "What happens when you stop guessing and start making decisions with criteria.",
+      "title": "System Results in Operation.",
+      "subtitle": "What happens when you stop guessing and start deciding with criteria.",
       "revenue": {
         "value": "+25%",
         "label": "Net Profit"
       },
       "tables": {
         "value": "-60%",
-        "label": "Underutilized Capacity"
+        "label": "Wasted Capacity"
       }
     }
   },
   "Blog": {
-    "badge": "Data & Insight",
-    "title": "Training the instinct.",
-    "read_more": "Read more",
+    "badge": "Criteria and Data",
+    "title": "Training the Instinct.",
+    "read_more": "Read More",
     "posts": {
       "0": {
         "title": "Why your star dish is ruining you?",
@@ -96,7 +127,7 @@
         "time": "8 min"
       },
       "2": {
-        "title": "Silent Operation: Optimize your margin without attracting prying eyes.",
+        "title": "Silent Operation: Optimize your margin without attracting attention.",
         "tag": "Discretion",
         "time": "4 min"
       }
@@ -105,9 +136,9 @@
   "Footer": {
     "title_part1": "Stop working",
     "title_part2": "for your suppliers.",
-    "subtitle": "Every day you open without control, your profit evaporates. Let’s shield your business today.",
-    "cta": "Request Discrete Diagnosis",
-    "brand_desc": "High-precision consulting. No fluff, no invasion. Systems that transform data into real margins for owners who want to earn more.",
+    "subtitle": "Every day you open without control, your profit evaporates. Let's bulletproof your business today.",
+    "cta": "Request Discreet Diagnosis",
+    "brand_desc": "High-precision consulting. No smoke, no invasion. Systems that transform data into real margins for owners who want to earn more.",
     "nav_title": "Navigation",
     "legal_title": "Legal",
     "privacy": "Privacy",
@@ -123,7 +154,7 @@
     "title_input": "Stop burning cash.",
     "label_name": "Restaurant Name",
     "label_city": "City",
-    "label_ticket": "Avg. Ticket (€)",
+    "label_ticket": "Avg. Ticket",
     "label_noshows": "No-Shows / Week",
     "action_calculate": "Calculate Loss",
     "result_prefix": "You are losing approx.",
@@ -136,7 +167,11 @@
     "action_send_me": "Send Kit Now",
     "action_back": "Back",
     "action_recalc": "Calculate again",
-    "success_message": "Sent! Check your inbox."
+    "success_message": "Sent! Check your inbox.",
+    "error_prefix": "Error: ",
+    "default_error": "Unknown error occurred",
+    "email_placeholder": "email@restaurant.com",
+    "action_sending": "SENDING..."
   },
   "ShieldSection": {
     "badge": "No-Show Killer",

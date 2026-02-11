@@ -43,7 +43,7 @@ export default function ScrollReveal({
     className = "",
 }: ScrollRevealProps) {
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: true, margin: `0px 0px -${threshold * 100}% 0px` });
+    const isInView = useInView(ref, { once: true, margin: `0px 0px -${threshold * 100}% 0px` as any });
 
     return (
         <motion.div

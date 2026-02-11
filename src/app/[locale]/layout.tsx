@@ -17,8 +17,25 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-    title: 'Dozo Tech',
+    metadataBase: new URL('https://dozo.tech'),
+    title: {
+        template: '%s | Dozo Tech',
+        default: 'Dozo Tech'
+    },
     description: 'Sistemas que respiran.',
+    openGraph: {
+        title: 'Dozo Tech',
+        description: 'Sistemas que respiran.',
+        url: 'https://dozo.tech',
+        siteName: 'Dozo Tech',
+        locale: 'es_ES',
+        type: 'website',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Dozo Tech',
+        description: 'Sistemas que respiran.',
+    },
 };
 
 import JsonLd from '../../components/atoms/JsonLd';

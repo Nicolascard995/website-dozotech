@@ -13,6 +13,28 @@ export default function SolutionsGrid() {
     const [isRadarOpen, setIsRadarOpen] = useState(false);
     const [isControlOpen, setIsControlOpen] = useState(false);
 
+    // Products config to map to translations keys
+    const products = [
+        {
+            key: "audit",
+            icon: <Search className="w-8 h-8 text-acid-lime" />,
+            action: () => setIsRadarOpen(true),
+            highlight: false
+        },
+        {
+            key: "noshow",
+            icon: <ShieldCheck className="w-8 h-8 text-acid-lime" />,
+            action: () => document.getElementById("shield-calculator")?.scrollIntoView({ behavior: "smooth" }),
+            highlight: false
+        },
+        {
+            key: "efficiency",
+            icon: <BarChart3 className="w-8 h-8 text-acid-lime" />,
+            action: () => setIsControlOpen(true),
+            highlight: true
+        }
+    ];
+
     return (
         <section id="soluciones" className="py-32 bg-obsidian relative overflow-hidden">
             <RadarQuizModal isOpen={isRadarOpen} onClose={() => setIsRadarOpen(false)} />
@@ -21,105 +43,103 @@ export default function SolutionsGrid() {
             {/* Background enhancement */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_#d4ff0008,_transparent_50%)] z-0 pointer-events-none" />
 
-            <div className="max-w-7xl mx-auto px-6 relative z-10">
-                <div className="flex justify-between items-end mb-16">
-                    <div>
-                        <span className="text-acid-lime font-mono text-sm uppercase mb-4 block tracking-widest neon-text">
-                            {t("badge")}
-                        </span>
-                        <h2 className="text-4xl md:text-7xl font-black text-white tracking-tighter decoration-clone leading-tight">
-                            {t("title")}
-                        </h2>
-                    </div>
+            <div className="max-w-5xl mx-auto px-6 relative z-10">
+                {/* Intro */}
+                <div className="mb-20 text-center">
+                    <span className="text-acid-lime font-mono text-sm uppercase mb-6 block tracking-widest neon-text">
+                        {t("badge")}
+                    </span>
+                    <p className="text-2xl md:text-3xl font-light text-slate-300 max-w-2xl mx-auto leading-relaxed font-display">
+                        "{t("intro")}"
+                    </p>
                 </div>
 
-                <div className="grid md:grid-cols-12 md:grid-rows-2 gap-6 h-auto md:h-[600px]">
-                    {/* Radar (Main Large Card) */}
-                    <div className="md:col-span-8 md:row-span-2">
+                {/* Products List */}
+                <div className="flex flex-col gap-16 mb-24">
+                    {products.map((product, idx) => (
                         <TiltCard
-                            className="h-full rounded-[2rem] bg-surface border border-white/5 relative overflow-hidden group cursor-pointer"
-                            onClick={() => setIsRadarOpen(true)}
+                            key={idx}
+                            className={`rounded-[2rem] bg-surface border ${product.highlight ? 'border-acid-lime/20' : 'border-white/5'} relative overflow-hidden group p-8 md:p-12`}
+                            glowColor={product.highlight ? "rgba(212, 255, 0, 0.2)" : "rgba(255, 255, 255, 0.1)"}
+                            onClick={product.action}
                         >
-                            <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent z-0 pointer-events-none" />
-                            <div className="relative z-10 p-8 md:p-12 flex flex-col h-full justify-between">
+                            <div className="grid md:grid-cols-2 gap-12 items-center">
+                                {/* Left Content */}
                                 <div>
-                                    <motion.div
-                                        whileHover={{ scale: 1.1, rotate: 10 }}
-                                        className="w-16 h-16 rounded-2xl bg-acid-lime/10 flex items-center justify-center mb-8 border border-acid-lime/20"
-                                    >
-                                        <Search className="w-8 h-8 text-acid-lime" />
-                                    </motion.div>
-                                    <h3 className="text-4xl font-black text-white mb-6 tracking-tight font-display">
-                                        {t("radar.title")}
+                                    <div className="w-16 h-16 rounded-2xl bg-acid-lime/10 flex items-center justify-center mb-8 border border-acid-lime/20">
+                                        {product.icon}
+                                    </div>
+                                    <h3 className="text-3xl md:text-4xl font-black text-white mb-4 tracking-tight font-display">
+                                        {t(`${product.key}.title`)}
                                     </h3>
-                                    <p className="text-slate-400 text-xl font-light leading-relaxed max-w-lg">
-                                        {t("radar.desc")}
+                                    <p className="text-xl text-acid-lime font-mono mb-6">
+                                        {t(`${product.key}.subtitle`)}
                                     </p>
+
+                                    <div className="space-y-6">
+                                        <div className="bg-white/5 rounded-xl p-4 border border-white/5">
+                                            <span className="text-slate-400 text-sm uppercase tracking-widest block mb-2 font-bold">{t("label_problem")}</span>
+                                            <p className="text-slate-300">{t(`${product.key}.problem`)}</p>
+                                        </div>
+
+                                        <div className="space-y-2">
+                                            <span className="text-slate-400 text-sm uppercase tracking-widest block mb-2 font-bold">{t("label_features")}</span>
+                                            <ul className="space-y-2">
+                                                {/* We need to get the array from translations. 
+                                                    Since useTranslations returns an object/string, we can use 0,1,2,3 keys if array, 
+                                                    or just hardcode known length if it's fixed. 
+                                                    Ideally next-intl supports arrays. 
+                                                    Let's use raw properties or specific keys. 
+                                                    Actually next-intl `t.raw('key')` returns the object/array.
+                                                */}
+                                                {[0, 1, 2, 3].map((i) => {
+                                                    try {
+                                                        const feature = t(`${product.key}.features.${i}`);
+                                                        return feature ? (
+                                                            <li key={i} className="flex items-start gap-3 text-slate-400">
+                                                                <span className="text-acid-lime mt-1">•</span>
+                                                                <span>{feature}</span>
+                                                            </li>
+                                                        ) : null;
+                                                    } catch (e) { return null; }
+                                                })}
+                                            </ul>
+                                        </div>
+
+                                        <div>
+                                            <span className="text-slate-400 text-sm uppercase tracking-widest block mb-2 font-bold">{t("label_result")}</span>
+                                            <p className="text-white font-medium">{t(`${product.key}.result`)}</p>
+                                        </div>
+                                    </div>
+
+                                    <button
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            product.action();
+                                        }}
+                                        className="mt-10 flex items-center gap-3 text-acid-lime font-bold text-sm uppercase tracking-widest group/btn hover:text-white transition-colors"
+                                    >
+                                        {t(`${product.key}.cta`)}
+                                        <ArrowRight className="w-5 h-5 group-hover/btn:translate-x-2 transition-transform" />
+                                    </button>
                                 </div>
-                                <button
-                                    onClick={(e) => {
-                                        e.stopPropagation();
-                                        setIsRadarOpen(true);
-                                    }}
-                                    className="flex items-center gap-3 text-acid-lime font-bold text-sm uppercase tracking-widest group/btn mt-8"
-                                >
-                                    {t("radar.cta")}{" "}
-                                    <ArrowRight className="w-5 h-5 group-hover/btn:translate-x-2 transition-transform" />
-                                </button>
+
+                                {/* Right Content (Visual/Target) */}
+                                <div className="h-full flex flex-col justify-center">
+                                    <div className="bg-obsidian/50 rounded-2xl p-8 border border-white/5 text-center">
+                                        <span className="text-slate-500 text-sm uppercase tracking-widest block mb-4">{t("label_target")}</span>
+                                        <p className="text-white text-lg font-light leading-relaxed">
+                                            "{t(`${product.key}.target`)}"
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="absolute -right-20 -bottom-20 w-96 h-96 bg-acid-lime/10 rounded-full blur-3xl group-hover:scale-125 transition-transform duration-1000 pointer-events-none"></div>
                         </TiltCard>
-                    </div>
-
-                    {/* Shield (Small Card) */}
-                    <div className="md:col-span-4 md:row-span-1">
-                        <TiltCard
-                            className="h-full rounded-[2rem] bg-surface border border-white/5 relative overflow-hidden group p-8 cursor-pointer"
-                            onClick={() =>
-                                document
-                                    .getElementById("shield-calculator")
-                                    ?.scrollIntoView({ behavior: "smooth" })
-                            }
-                        >
-                            <motion.div
-                                whileHover={{ scale: 1.1, rotate: -10 }}
-                                className="w-12 h-12 rounded-xl bg-acid-lime/10 flex items-center justify-center mb-6 border border-acid-lime/20"
-                            >
-                                <ShieldCheck className="w-6 h-6 text-acid-lime" />
-                            </motion.div>
-                            <h3 className="text-2xl font-black text-white mb-3 tracking-tight font-display">
-                                {t("shield.title")}
-                            </h3>
-                            <p className="text-slate-400 text-sm font-light leading-relaxed">
-                                {t("shield.desc")}
-                            </p>
-                        </TiltCard>
-                    </div>
-
-                    {/* Tranquilidad (Small Card) */}
-                    <div className="md:col-span-4 md:row-span-1">
-                        <TiltCard
-                            className="h-full rounded-[2rem] bg-surface border border-white/5 relative overflow-hidden group p-8 cursor-pointer"
-                            onClick={() => setIsControlOpen(true)}
-                        >
-                            <motion.div
-                                whileHover={{ scale: 1.1, rotate: 10 }}
-                                className="w-12 h-12 rounded-xl bg-acid-lime/10 flex items-center justify-center mb-6 border border-acid-lime/20"
-                            >
-                                <BarChart3 className="w-6 h-6 text-acid-lime" />
-                            </motion.div>
-                            <h3 className="text-2xl font-black text-white mb-3 tracking-tight font-display">
-                                {t("tranquilidad.title")}
-                            </h3>
-                            <p className="text-slate-400 text-sm font-light leading-relaxed">
-                                {t("tranquilidad.desc")}
-                            </p>
-                        </TiltCard>
-                    </div>
+                    ))}
                 </div>
 
                 {/* Results Banner */}
-                <div className="mt-6 w-full">
+                <div className="w-full">
                     <TiltCard
                         className="w-full bg-acid-lime rounded-[2rem] p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 group relative overflow-hidden"
                         glowColor="#ffffff"

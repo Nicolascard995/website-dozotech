@@ -1,10 +1,18 @@
-'use client';
-import { useTranslations } from 'next-intl';
-import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
+import { getAllPosts } from '@/lib/blog';
+import { getTranslations } from 'next-intl/server';
+import Link from 'next/link';
+import { ChevronLeft, ChevronRight, ArrowRight, Calendar } from 'lucide-react';
 
-export default function BlogCarousel() {
-    const t = useTranslations('Blog');
-    const posts = [0, 1, 2]; // Keys for posts
+export default async function BlogCarousel({ locale }: { locale: string }) {
+    const t = await getTranslations({ locale, namespace: 'Blog' });
+    const posts = await getAllPosts(locale);
+
+    // Limits to 3 latest posts for the carousel
+    const latestPosts = posts.slice(0, 3);
+
+    if (latestPosts.length === 0) {
+        return null;
+    }
 
     return (
         <section id="blog" className="py-24 bg-obsidian overflow-hidden">
@@ -24,15 +32,36 @@ export default function BlogCarousel() {
             </div>
 
             <div className="flex gap-6 overflow-x-auto pb-8 px-6 no-scrollbar snap-x">
-                {posts.map((idx) => (
-                    <div key={idx} className="min-w-[320px] md:min-w-[400px] glass rounded-3xl p-8 border border-white/5 hover:border-cyan/30 transition-all snap-start group cursor-pointer">
-                        <span className="inline-block px-3 py-1 bg-cyan/10 text-cyan rounded-full text-[10px] font-bold uppercase mb-6">{t(`posts.${idx}.tag`)}</span>
-                        <h3 className="text-2xl font-bold text-white mb-8 group-hover:text-cyan transition-colors">{t(`posts.${idx}.title`)}</h3>
-                        <div className="flex items-center gap-4 text-slate-500 text-xs">
-                            <span className="flex items-center gap-1 font-mono">{t(`posts.${idx}.time`)}</span>
-                            <span className="flex items-center gap-1">{t('read_more')} <ArrowRight className="w-3 h-3" /></span>
+                {latestPosts.map((post) => (
+                    <Link
+                        key={post.id}
+                        href={`/${locale}/blog/${post.slug}`}
+                        className="min-w-[320px] md:min-w-[400px] glass rounded-3xl p-8 border border-white/5 hover:border-cyan/30 transition-all snap-start group cursor-pointer block"
+                    >
+                        <div className="flex gap-2 mb-6">
+                            {post.translation?.tags?.map(tag => (
+                                <span key={tag} className="inline-block px-3 py-1 bg-cyan/10 text-cyan rounded-full text-[10px] font-bold uppercase">
+                                    {tag}
+                                </span>
+                            ))}
                         </div>
-                    </div>
+                        <h3 className="text-2xl font-bold text-white mb-8 group-hover:text-cyan transition-colors line-clamp-2">
+                            {post.translation?.title}
+                        </h3>
+                        <div className="flex items-center gap-4 text-slate-500 text-xs">
+                            <span className="flex items-center gap-1 font-mono">
+                                <Calendar className="w-3 h-3" />
+                                {new Date(post.created_at).toLocaleDateString(locale, {
+                                    year: 'numeric',
+                                    month: 'short',
+                                    day: 'numeric'
+                                })}
+                            </span>
+                            <span className="flex items-center gap-1">
+                                {t('read_more')} <ArrowRight className="w-3 h-3" />
+                            </span>
+                        </div>
+                    </Link>
                 ))}
             </div>
         </section>

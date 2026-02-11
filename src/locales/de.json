@@ -28,92 +28,123 @@
     "efficiency_label": "Pionier-Plätze frei"
   },
   "Methodology": {
-    "title": "Sie kochen. Ich kümmere mich um meinen Bereich: die Automatisierung.",
-    "subtitle": "Ich arbeite im Hintergrund. Das System operiert geräuschlos, damit Kontrolle keine Last mehr ist, sondern wieder für Ruhe sorgt.",
+    "title": "Digital Mise en Place",
+    "subtitle": "Wie in der Küche: Ohne Vorbereitung kein Service. Bevor wir mehr verkaufen, bringen wir Ordnung ins Haus.",
     "steps": {
       "01": {
-        "title": "Digitales Audit",
-        "desc": "Die meisten Entscheidungen fallen am Handy. Wenn Sie dort nicht präsent sind, wählt der Gast die Konkurrenz. Ich analysiere Ihre Präsenz und digitalen Kanäle: Was man über Sie sagt und wo Potenzial verloren geht, bevor es die Kasse erreicht – ohne Ihren täglichen Betrieb zu stören."
+        "title": "Bereinigung",
+        "desc": "Wir eliminieren digitales und operatives Rauschen. Wir identifizieren, was überflüssig ist, was fehlt und was dein Wachstum bremst."
       },
       "02": {
-        "title": "No-Show Killer",
-        "desc": "Wir minimieren Stornierungen und machen aus Reservierungen belegte Tische. Angepasst an Ihre Kanäle und Ihre Arbeitsweise. Weniger leere Plätze, mehr echte Einnahmen."
+        "title": "Ordnung",
+        "desc": "Jede Datenbasis an ihrem Platz. Wir implementieren Messsysteme, damit du genau weißt, was in deinem Geschäft in Echtzeit passiert."
       },
       "03": {
-        "title": "Operative Ruhe",
-        "desc": "Wir machen sichtbar, wohin das Geld fließt und welche Unternehmensteile den Umsatz wirklich stützen. Kontinuierliche Überwachung, ohne Vermutungen und ohne dass Sie ständig präsent sein müssen.",
+        "title": "Ausführung",
+        "desc": "Wenn alles bereit ist, drehen wir den Hahn auf. Präzise Strategien auf solidem Fundament, um zu skalieren, ohne den Betrieb zu stören.",
         "cta": "Diagnose ansehen"
       }
     }
   },
   "solutions": {
-    "badge": "Stille Kontrolle",
-    "title": "Stoppen Sie den unsichtbaren Verlust.",
-    "radar": {
-      "id": "radar",
-      "title": "Rentabilitäts-Röntgen",
-      "desc": "Wir visualisieren, wohin das Geld fließt und welche Unternehmensteile die Kasse wirklich stützen. Ohne Vermutungen, ohne Störungen.",
-      "cta": "Diagnose ansehen"
+    "badge": "Drei Systeme. Drei Hebel.",
+    "intro": "Drei Systeme. Drei kritische Rentabilitätshebel. Jedes entwickelt, um ein spezifisches Restaurantproblem zu lösen.",
+    "audit": {
+      "id": "audit",
+      "title": "Digital Audit für Restaurants",
+      "subtitle": "Erkenne, warum dein Restaurant Gäste verliert, bevor sie reservieren – und was du dagegen tun kannst.",
+      "problem": "Du hast Traffic und Bewertungen, aber keine Reservierungen. Zu viel Abhängigkeit von Drittanbietern. Du weißt nicht, welcher Kanal Geld bringt.",
+      "features": [
+        "Vollständiges Audit der digitalen Präsenz",
+        "Benchmark gegen lokale Konkurrenten",
+        "Erkennung von Funnel-Leaks",
+        "Umsetzbarer Bericht (30/60/90 Tage)"
+      ],
+      "result": "Ein klarer Fahrplan für mehr Reservierungen und weniger Abhängigkeit.",
+      "target": "Für Restaurants, die Gäste wollen, nicht nur Likes.",
+      "cta": "Digital Audit anfordern"
     },
-    "shield": {
-      "id": "shield",
-      "title": "Einnahmeschutz",
-      "desc": "Wir reduzieren Stornierungen, Ineffizienzen und Entscheidungen, die Plätze oder Geld ungenutzt lassen. Jede Anpassung zielt auf echte Stabilität ab.",
-      "cta": "Kasse schützen"
+    "noshow": {
+      "id": "noshow",
+      "title": "No-Show Killer",
+      "subtitle": "Reduziere No-Shows um 30-60%, ohne das Gästeerlebnis zu beeinträchtigen.",
+      "problem": "Leere Tische bei bereitstehendem Personal. Stille Verluste. Mangel an klaren Richtlinien.",
+      "features": [
+        "No-Show-Analyse nach Tag/Zeit/Kanal",
+        "Berechnung der realen Umsatzauswirkungen",
+        "Entwurf einer Reservierungsrichtlinie",
+        "Erinnerungs- und Kontrollsystem"
+      ],
+      "result": "Mehr besetzte Tische, mehr Umsatz, weniger operativer Stress.",
+      "target": "Für Restaurants mit Reservierungen und Umsatzlecks.",
+      "cta": "Auswirkung berechnen"
     },
-    "tranquilidad": {
-      "id": "tranquilidad",
-      "title": "Operative Ruhe",
-      "desc": "Ihr Geschäft unter Kontrolle, auch wenn Sie nicht da sind. Weniger mentaler Lärm, mehr Klarheit und mehr Freude am Handwerk.",
-      "cta": "Kontrolle zurückgewinnen"
+    "efficiency": {
+      "id": "efficiency",
+      "title": "Effizienz Pro",
+      "subtitle": "Finde und rette die 10–20% Marge, die in deiner Operation verloren gehen.",
+      "problem": "Hoher Wareneinsatz ohne klare Erklärung. Gerichte ohne Marge. Inventur nach Augenmaß.",
+      "features": [
+        "Automatisierte Verkaufs- und Rezeptanalyse",
+        "Menu Engineering (Stars, Dogs...)",
+        "Erkennung von Gerichten mit negativer Marge",
+        "Simulation von Menü-Szenarien"
+      ],
+      "result": "Entscheidungen basierend auf Zahlen. Mehr Marge ohne mehr Volumen.",
+      "target": "Für Restaurants, die verkaufen, aber nicht profitabel genug sind.",
+      "cta": "Marge diagnostizieren"
     },
+    "label_problem": "Problem",
+    "label_features": "Enthält",
+    "label_result": "Ergebnis",
+    "label_target": "Für wen",
     "results": {
-      "title": "Ergebnisse des Systems im Betrieb.",
-      "subtitle": "Was passiert, wenn man aufhört zu raten und anfängt, Entscheidungen mit System zu treffen.",
+      "title": "Systemergebnisse im Betrieb.",
+      "subtitle": "Was passiert, wenn man aufhört zu raten und anfängt, mit Kriterien zu entscheiden.",
       "revenue": {
         "value": "+25%",
         "label": "Nettogewinn"
       },
       "tables": {
         "value": "-60%",
-        "label": "Ungenutzte Kapazität"
+        "label": "Verschwendete Kapazität"
       }
     }
   },
   "Blog": {
-    "badge": "Wissensdatenbank",
-    "title": "Instinkt trainieren.",
+    "badge": "Kriterien und Daten",
+    "title": "Den Instinkt trainieren.",
     "read_more": "Mehr lesen",
     "posts": {
       "0": {
-        "title": "Warum Ihr Bestseller Sie ruinieren könnte?",
-        "tag": "Rentabilität",
-        "time": "5 min"
+        "title": "Warum dein Star-Gericht dich ruiniert?",
+        "tag": "Margen",
+        "time": "5 Min"
       },
       "1": {
-        "title": "Die Lüge der vollen Tische: Umsatz ist nicht gleich Gewinn.",
+        "title": "Die Lüge vom vollen Tisch: Wie man mit vollem Haus Geld verliert.",
         "tag": "Strategie",
-        "time": "8 min"
+        "time": "8 Min"
       },
       "2": {
-        "title": "Algebra in der Küche: Warum Daten wichtiger sind als das Rezept.",
-        "tag": "Methodik",
-        "time": "4 min"
+        "title": "Stille Operation: Optimiere deine Marge, ohne Aufsehen zu erregen.",
+        "tag": "Diskretion",
+        "time": "4 Min"
       }
     }
   },
   "Footer": {
-    "title_part1": "Beenden Sie den",
-    "title_part2": "Gewinnverlust.",
-    "subtitle": "Jeder Tag ohne System kostet Sie Marge. Handeln Sie heute und sichern Sie Ihren Erfolg.",
-    "cta": "Kostenloses Audit anfordern",
-    "brand_desc": "Systeme, die atmen. Hochpräzise Beratung für den Gastronomiesektor. Wir verwandeln Daten in reale Gewinnmargen.",
+    "title_part1": "Hör auf,",
+    "title_part2": "für deine Lieferanten zu arbeiten.",
+    "subtitle": "Jeden Tag, den du ohne Kontrolle öffnest, verdunstet dein Gewinn. Lass uns dein Geschäft heute kugelsicher machen.",
+    "cta": "Diskrete Diagnose anfordern",
+    "brand_desc": "Hochpräzise Beratung. Kein Rauch, keine Invasion. Systeme, die Daten in echte Margen verwandeln, für Eigentümer, die mehr verdienen wollen.",
     "nav_title": "Navigation",
     "legal_title": "Rechtliches",
     "privacy": "Datenschutz",
     "terms": "AGB",
-    "founder": "Founding Partner",
-    "rights": "© 2026 DOZO TECH • ALL RIGHTS RESERVED",
+    "founder": "Data Head",
+    "rights": "© 2026 DOZO TECH • ALLE RECHTE VORBEHALTEN",
     "tagline": "SYSTEMS THAT BREATHE"
   },
   "Metadata": {
@@ -123,7 +154,7 @@
     "title_input": "Stoppen Sie den Verlust.",
     "label_name": "Restaurant Name",
     "label_city": "Stadt",
-    "label_ticket": "Ø Bon (€)",
+    "label_ticket": "Ø Bon",
     "label_noshows": "No-Shows / Woche",
     "action_calculate": "Verlust Berechnen",
     "result_prefix": "Sie verlieren ca.",
@@ -136,7 +167,11 @@
     "action_send_me": "Kit Jetzt Senden",
     "action_back": "Zurück",
     "action_recalc": "Neu berechnen",
-    "success_message": "Gesendet! Prüfen Sie Ihren Posteingang."
+    "success_message": "Gesendet! Prüfen Sie Ihren Posteingang.",
+    "error_prefix": "Fehler: ",
+    "default_error": "Unbekannter Fehler aufgetreten",
+    "email_placeholder": "email@restaurant.com",
+    "action_sending": "SENDEN..."
   },
   "ShieldSection": {
     "badge": "No-Show Killer",

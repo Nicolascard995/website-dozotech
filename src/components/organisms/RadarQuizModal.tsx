@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ArrowRight, Check, AlertTriangle, EyeOff } from "lucide-react";
+import { submitRadarQuizLead } from "@/actions/leads";
 
 interface RadarQuizModalProps {
     isOpen: boolean;
@@ -38,10 +39,15 @@ export default function RadarQuizModal({ isOpen, onClose }: RadarQuizModalProps)
         }
     };
 
-    const handleEmailSubmit = (e: React.FormEvent) => {
+    const handleEmailSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        // TODO: Server Action for Email
-        console.log("Radar Quiz Lead:", { name, email, score });
+
+        await submitRadarQuizLead({
+            name,
+            email,
+            score
+        });
+
         setStep(100); // Go to result
     };
 

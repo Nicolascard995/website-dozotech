@@ -14,6 +14,7 @@ export default function JsonLd() {
                 "contactPoint": {
                     "@type": "ContactPoint",
                     "telephone": "+1-555-0199",
+                    "email": "contact@dozo.tech",
                     "contactType": "customer service",
                     "availableLanguage": ["English", "Spanish", "German"]
                 }

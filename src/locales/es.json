@@ -28,45 +28,76 @@
     "efficiency_label": "Cupos de Pionero Libres"
   },
   "Methodology": {
-    "title": "Tú cocinas. Yo me encargo de mi línea: la automatización.",
-    "subtitle": "Trabajo en segundo plano. El sistema opera en silencio para que el control deje de ser una carga y vuelva a ser tranquilidad.",
+    "title": "Mise en Place Digital",
+    "subtitle": "Igual que en cocina: si no hay preparación, no hay servicio. Antes de vender más, ponemos la casa en orden.",
     "steps": {
       "01": {
-        "title": "Auditoría Digital",
-        "desc": "Una gran parte de las decisiones se toman desde el móvil. Si no estás presente ahí, elegirán a otro. Analizo tu presencia y tus canales digitales: qué dicen de ti, dónde hablan de ti y dónde se pierde demanda antes de llegar a la caja, sin interferir en tu operación diaria."
+        "title": "Limpieza",
+        "desc": "Eliminamos el ruido digital y operativo. Identificamos lo que sobra, lo que falta y lo que está frenando tu crecimiento."
       },
       "02": {
-        "title": "No-Show Killer",
-        "desc": "Reducimos los no-shows y hacemos que las reservas se conviertan en mesas ocupadas. Adaptado a tus canales y a tu forma de trabajar. Menos sillas vacías, más ingresos reales."
+        "title": "Orden",
+        "desc": "Cada dato en su sitio. Implementamos sistemas de medición para que sepas exactamente qué pasa en tu negocio en tiempo real."
       },
       "03": {
-        "title": "Tranquilidad Operativa",
-        "desc": "Visualizamos dónde se va el dinero y qué partes del negocio sostienen realmente la caja. Supervisión continua, sin suposiciones y sin que tengas que estar encima.",
+        "title": "Ejecución",
+        "desc": "Con todo listo, abrimos el grifo. Estrategias precisas sobre una base sólida para escalar sin romper la operativa.",
         "cta": "Ver mi diagnóstico"
       }
     }
   },
   "solutions": {
-    "badge": "Control Silencioso",
-    "title": "Detén la pérdida invisible.",
-    "radar": {
-      "id": "radar",
-      "title": "Radiografía de Rentabilidad",
-      "desc": "Visualizamos dónde se va el dinero y qué partes del negocio realmente sostienen la caja. Sin suposiciones, sin interferencias.",
-      "cta": "Ver mi diagnóstico"
+    "badge": "Tres Sistemas. Tres Palancas.",
+    "intro": "Tres sistemas. Tres palancas críticas de rentabilidad. Cada uno diseñado para resolver un problema específico del restaurante.",
+    "audit": {
+      "id": "audit",
+      "title": "Digital Audit para Restaurantes",
+      "subtitle": "Detecta por qué tu restaurante pierde clientes antes de reservar — y qué hacer para revertirlo.",
+      "problem": "Tienes tráfico y reviews, pero no reservas. Dependes de terceros. No sabes qué canal trae dinero.",
+      "features": [
+        "Auditoría completa de presencia digital",
+        "Benchmark contra competidores de tu zona",
+        "Detección de fugas en el funnel",
+        "Informe accionable a 30/60/90 días"
+      ],
+      "result": "Una hoja de ruta clara para aumentar reservas y reducir dependencia.",
+      "target": "Para restaurantes que quieren más clientes, no solo más likes.",
+      "cta": "Solicitar Digital Audit"
     },
-    "shield": {
-      "id": "shield",
-      "title": "Protección de Ingresos",
-      "desc": "Reducimos cancelaciones, ineficiencias y decisiones que dejan sillas o dinero en el aire. Cada ajuste busca estabilidad real.",
-      "cta": "Proteger mi caja"
+    "noshow": {
+      "id": "noshow",
+      "title": "No-Show Killer",
+      "subtitle": "Reduce no-shows entre un 30 y 60% sin dañar la experiencia del cliente.",
+      "problem": "Mesas vacías con personal listo. Pérdidas silenciosas. Falta de políticas claras.",
+      "features": [
+        "Análisis de no-shows por día/hora/canal",
+        "Cálculo del impacto real en ingresos",
+        "Diseño de política de reservas",
+        "Sistema de recordatorios y control"
+      ],
+      "result": "Más mesas ocupadas, más ingresos, menos estrés operativo.",
+      "target": "Para restaurantes con reservas y alta demanda pero fugas de revenue.",
+      "cta": "Calcular impacto de mis no-shows"
     },
-    "tranquilidad": {
-      "id": "tranquilidad",
-      "title": "Tranquilidad Operativa",
-      "desc": "El negocio bajo control incluso cuando no estás. Menos ruido mental, más claridad y más disfrute del oficio.",
-      "cta": "Recuperar el control"
+    "efficiency": {
+      "id": "efficiency",
+      "title": "Eficiencia Pro",
+      "subtitle": "Encuentra y recupera el 10–20% de margen que se pierde dentro de tu operación.",
+      "problem": "Food cost alto sin explicación. Platos sin margen. Inventario a ojo.",
+      "features": [
+        "Análisis automático de ventas y recetas",
+        "Menu engineering (Stars, Dogs...)",
+        "Detección de platos con margen negativo",
+        "Simulación de escenarios de carta"
+      ],
+      "result": "Decisiones basadas en números. Más margen sin subir volumen.",
+      "target": "Para restaurantes que ya venden, pero no maximizan rentabilidad.",
+      "cta": "Diagnosticar mi margen"
     },
+    "label_problem": "Problema",
+    "label_features": "Qué incluye",
+    "label_result": "Resultado",
+    "label_target": "Para quién es",
     "results": {
       "title": "Resultados del sistema en operación.",
       "subtitle": "Lo que ocurre cuando se deja de adivinar y se toman decisiones con criterio.",
@@ -123,7 +154,7 @@
     "title_input": "Deja de quemar dinero.",
     "label_name": "Nombre del Restaurante",
     "label_city": "Ciudad",
-    "label_ticket": "Ticket Medio (€)",
+    "label_ticket": "Ticket Medio",
     "label_noshows": "No-Shows / Semana",
     "action_calculate": "Calcular Pérdida",
     "result_prefix": "Estás perdiendo aprox.",
@@ -136,7 +167,11 @@
     "action_send_me": "Enviar Kit Ahora",
     "action_back": "Volver",
     "action_recalc": "Calcular de nuevo",
-    "success_message": "¡Enviado! Revisa tu correo."
+    "success_message": "¡Enviado! Revisa tu correo.",
+    "error_prefix": "Error: ",
+    "default_error": "Error desconocido",
+    "email_placeholder": "email@restaurante.com",
+    "action_sending": "ENVIANDO..."
   },
   "ShieldSection": {
     "badge": "No-Show Killer",

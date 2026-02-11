@@ -1,10 +1,13 @@
 'use client';
 import { useRef, useState, useEffect } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
 
 export default function Hero() {
     const t = useTranslations('Hero');
+    const locale = useLocale(); // Get current locale
+    const isGerman = locale === 'de';
+
     const [activeVideo, setActiveVideo] = useState(1);
     const videoRef1 = useRef<HTMLVideoElement>(null);
     const videoRef2 = useRef<HTMLVideoElement>(null);
@@ -67,7 +70,7 @@ export default function Hero() {
                 <div className="max-w-4xl border-l-2 border-acid-lime/30 pl-8 md:pl-12">
                     <div className="overflow-visible group">
                         <h1
-                            className="text-6xl md:text-8xl lg:text-9xl font-black text-white leading-[0.85] tracking-tighter relative"
+                            className={`${isGerman ? 'text-5xl md:text-6xl lg:text-7xl' : 'text-6xl md:text-8xl lg:text-9xl'} font-black text-white leading-[0.85] tracking-tighter relative transition-all duration-300`}
                             data-text={t('title_part1') + " " + t('title_part2')}
                         >
                             <span className="relative z-10 block group-hover:translate-x-1 transition-transform duration-200">{t('title_part1')}</span>

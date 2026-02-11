@@ -1,14 +1,19 @@
 'use client';
 import { useTranslations } from 'next-intl';
+import { useState } from 'react';
 import LanguageSwitcher from '@/components/atoms/LanguageSwitcher';
 import Logo from '@/components/atoms/Logo';
+import ControlQualifyModal from '@/components/organisms/ControlQualifyModal';
 
 export default function Footer() {
     const t = useTranslations('Footer');
     const tNav = useTranslations('Navbar');
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
         <footer className="bg-obsidian pt-24 pb-12 border-t border-white/5">
+            <ControlQualifyModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+
             <div className="max-w-7xl mx-auto px-6">
                 <div className="bg-cyan rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden mb-24">
                     <div className="relative z-10">
@@ -18,7 +23,10 @@ export default function Footer() {
                         <p className="text-obsidian/80 text-xl font-bold mb-10 max-w-xl mx-auto">
                             {t('subtitle')}
                         </p>
-                        <button className="px-12 py-6 bg-obsidian text-white font-black rounded-full text-base uppercase tracking-widest hover:scale-110 transition-all shadow-2xl">
+                        <button
+                            onClick={() => setIsModalOpen(true)}
+                            className="px-12 py-6 bg-obsidian text-white font-black rounded-full text-base uppercase tracking-widest hover:scale-110 transition-all shadow-2xl"
+                        >
                             {t('cta')}
                         </button>
                     </div>
@@ -66,3 +74,4 @@ export default function Footer() {
         </footer>
     );
 }
+

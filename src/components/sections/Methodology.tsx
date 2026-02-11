@@ -3,9 +3,12 @@ import { useTranslations } from 'next-intl';
 import { TrendingUp, Search, ChefHat } from 'lucide-react';
 import { motion } from 'framer-motion';
 import ScrollReveal from '../atoms/ScrollReveal';
+import { useState } from 'react';
+import RadarQuizModal from '../organisms/RadarQuizModal';
 
 export default function Methodology() {
     const t = useTranslations('Methodology');
+    const [isRadarOpen, setIsRadarOpen] = useState(false);
 
     const steps = [
         {
@@ -24,16 +27,19 @@ export default function Methodology() {
             id: "03",
             title: t('steps.03.title'),
             desc: t('steps.03.desc'),
-            icon: <ChefHat className="w-6 h-6 text-acid-lime" />
+            icon: <ChefHat className="w-6 h-6 text-acid-lime" />,
+            cta: t('steps.03.cta')
         }
     ];
 
     return (
         <section id="metodologia" className="py-32 bg-[#0f1117] relative overflow-hidden">
+            <RadarQuizModal isOpen={isRadarOpen} onClose={() => setIsRadarOpen(false)} />
+
             {/* Background Mono Typography */}
             <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-[0.03] flex items-center justify-center overflow-hidden">
-                <span className="text-[20vw] font-mono font-bold text-white leading-none whitespace-nowrap">
-                    SYSTEM
+                <span className="text-[15vw] font-mono font-bold text-white leading-none whitespace-nowrap">
+                    MISE EN PLACE
                 </span>
             </div>
 
@@ -79,7 +85,7 @@ export default function Methodology() {
                     </div>
 
                     {steps.map((step, idx) => (
-                        <ScrollReveal key={idx} mode="slide-up" delay={idx * 0.2} className="relative z-10 group bg-surface/50 p-8 rounded-3xl border border-white/5 backdrop-blur-sm hover:border-acid-lime/50 transition-colors duration-500">
+                        <ScrollReveal key={idx} mode="slide-up" delay={idx * 0.2} className="relative z-10 group bg-surface/50 p-8 rounded-3xl border border-white/5 backdrop-blur-sm hover:border-acid-lime/50 transition-colors duration-500 flex flex-col items-start h-full">
                             <div className="w-16 h-16 rounded-2xl bg-obsidian border border-white/10 flex items-center justify-center mb-8 group-hover:bg-acid-lime/10 group-hover:scale-110 transition-all duration-500 shadow-xl relative">
                                 {step.icon}
                                 <span className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-acid-lime text-obsidian font-black text-xs flex items-center justify-center shadow-[0_0_15px_rgba(212,255,0,0.5)]">
@@ -87,7 +93,16 @@ export default function Methodology() {
                                 </span>
                             </div>
                             <h3 className="text-2xl font-bold text-white mb-4 font-display tracking-tight">{step.title}</h3>
-                            <p className="text-slate-400 leading-relaxed text-sm">{step.desc}</p>
+                            <p className="text-slate-400 leading-relaxed text-sm flex-grow">{step.desc}</p>
+
+                            {step.cta && (
+                                <button
+                                    onClick={() => setIsRadarOpen(true)}
+                                    className="mt-6 text-acid-lime font-bold text-sm uppercase tracking-widest hover:underline decoration-2 underline-offset-4"
+                                >
+                                    {step.cta}
+                                </button>
+                            )}
                         </ScrollReveal>
                     ))}
                 </div>
@@ -95,3 +110,4 @@ export default function Methodology() {
         </section>
     );
 }
+

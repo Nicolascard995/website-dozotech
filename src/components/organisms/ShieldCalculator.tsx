@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
+import { submitShieldCalculatorLead } from "@/actions/leads";
 
 export default function ShieldCalculator() {
     const t = useTranslations("ShieldCalculator");
@@ -27,19 +28,34 @@ export default function ShieldCalculator() {
         }
     };
 
-    const handleEmailSubmit = (e: React.FormEvent) => {
+    const [loading, setLoading] = useState(false);
+
+    const handleEmailSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        // TODO: Implement actual email submission logic (Server Action)
-        console.log("Submitting email:", formData.email);
-        alert(t("success_message")); // Temporary feedback
-        setStep("input"); // Reset for demo
-        setFormData({ ...formData, email: "" });
+        setLoading(true);
+
+        const result = await submitShieldCalculatorLead({
+            ...formData,
+            annualLoss
+        });
+
+        setLoading(false);
+
+        if (result.success) {
+            alert(t("success_message")); // Temporary feedback
+            setStep("input"); // Reset for demo
+            setFormData({ ...formData, email: "" });
+        } else {
+            alert(t("error_prefix") + (result.error || t("default_error")));
+        }
     };
 
+    const [currency, setCurrency] = useState<"EUR" | "USD">("EUR");
+
     const formatCurrency = (value: number) => {
-        return new Intl.NumberFormat("de-DE", {
+        return new Intl.NumberFormat(currency === "EUR" ? "de-DE" : "en-US", {
             style: "currency",
-            currency: "EUR",
+            currency: currency,
             maximumFractionDigits: 0,
         }).format(value);
     };
@@ -48,6 +64,22 @@ export default function ShieldCalculator() {
         <div className="w-full max-w-md mx-auto bg-obsidian-dark border border-white/10 rounded-2xl p-6 md:p-8 backdrop-blur-md relative overflow-hidden group">
             {/* Glow Effect */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-cyan/5 rounded-full blur-[100px] pointer-events-none" />
+
+            {/* Currency Toggle */}
+            <div className="absolute top-4 right-4 z-20 flex bg-white/5 rounded-lg p-1 border border-white/10">
+                <button
+                    onClick={() => setCurrency("EUR")}
+                    className={`px-2 py-1 rounded-md text-xs font-bold transition-colors ${currency === "EUR" ? "bg-cyan text-obsidian" : "text-white/40 hover:text-white"}`}
+                >
+                    EUR
+                </button>
+                <button
+                    onClick={() => setCurrency("USD")}
+                    className={`px-2 py-1 rounded-md text-xs font-bold transition-colors ${currency === "USD" ? "bg-cyan text-obsidian" : "text-white/40 hover:text-white"}`}
+                >
+                    USD
+                </button>
+            </div>
 
             <div className="relative z-10">
                 <AnimatePresence mode="wait">
@@ -82,7 +114,7 @@ export default function ShieldCalculator() {
                                 <div className="grid grid-cols-2 gap-3">
                                     <input
                                         type="number"
-                                        placeholder={t("label_ticket")}
+                                        placeholder={`${t("label_ticket")} (${currency === "EUR" ? "€" : "$"})`}
                                         className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-white/30 focus:border-cyan focus:outline-none transition-colors"
                                         value={formData.ticket}
                                         onChange={(e) => setFormData({ ...formData, ticket: e.target.value })}
@@ -164,7 +196,7 @@ export default function ShieldCalculator() {
 
                             <input
                                 type="email"
-                                placeholder="email@restaurant.com"
+                                placeholder={t("email_placeholder")}
                                 className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-white/30 focus:border-acid-lime focus:outline-none transition-colors"
                                 value={formData.email}
                                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -173,9 +205,10 @@ export default function ShieldCalculator() {
 
                             <button
                                 type="submit"
-                                className="w-full bg-acid-lime text-obsidian font-bold py-3 rounded-lg hover:bg-acid-lime/90 transition-all uppercase tracking-wide mt-2"
+                                disabled={loading}
+                                className="w-full bg-acid-lime text-obsidian font-bold py-3 rounded-lg hover:bg-acid-lime/90 transition-all uppercase tracking-wide mt-2 disabled:opacity-50 disabled:cursor-not-allowed"
                             >
-                                {t("action_send_me")}
+                                {loading ? t("action_sending") : t("action_send_me")}
                             </button>
 
                             <button

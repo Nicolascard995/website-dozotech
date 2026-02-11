@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ArrowRight, Check, ChevronRight, Calculator, Clock, Users, DollarSign } from "lucide-react";
+import { submitControlQualifyLead } from "@/actions/leads";
 
 interface ControlQualifyModalProps {
     isOpen: boolean;
@@ -21,7 +22,8 @@ export default function ControlQualifyModal({ isOpen, onClose }: ControlQualifyM
         painPoint: "",
         name: "",
         email: "",
-        phone: ""
+        phone: "",
+        businessName: ""
     });
 
     if (!isOpen) return null;
@@ -36,10 +38,19 @@ export default function ControlQualifyModal({ isOpen, onClose }: ControlQualifyM
         }
     };
 
-    const handleSubmit = () => {
-        // TODO: Server Action
-        console.log("Control Qualify Lead:", formData);
-        setStep(100);
+    const [loading, setLoading] = useState(false);
+
+    const handleSubmit = async () => {
+        setLoading(true);
+        const result = await submitControlQualifyLead(formData);
+        setLoading(false);
+
+        if (result.success) {
+            console.log("Control Qualify Lead:", formData);
+            setStep(100);
+        } else {
+            alert("Error: " + (result.error || "Unknown error occurred"));
+        }
     };
 
     const updateField = (field: string, value: string) => {
@@ -50,7 +61,7 @@ export default function ControlQualifyModal({ isOpen, onClose }: ControlQualifyM
         if (step === 1) return formData.role !== "";
         if (step === 2) return formData.revenue !== "";
         if (step === 3) return formData.painPoint !== "";
-        if (step === 4) return formData.name !== "" && formData.email !== "";
+        if (step === 4) return formData.name !== "" && formData.email !== "" && formData.businessName !== "";
         return true;
     };
 
@@ -158,8 +169,8 @@ export default function ControlQualifyModal({ isOpen, onClose }: ControlQualifyM
                                             key={role}
                                             onClick={() => updateField("role", role)}
                                             className={`w-full p-4 rounded-xl border flex items-center justify-between group transition-all ${formData.role === role
-                                                    ? "bg-acid-lime/10 border-acid-lime text-white"
-                                                    : "bg-white/5 border-white/5 text-slate-400 hover:border-white/20 hover:text-white"
+                                                ? "bg-acid-lime/10 border-acid-lime text-white"
+                                                : "bg-white/5 border-white/5 text-slate-400 hover:border-white/20 hover:text-white"
                                                 }`}
                                         >
                                             <span className="font-bold uppercase tracking-wide">{t(`role_${role}`)}</span>
@@ -186,8 +197,8 @@ export default function ControlQualifyModal({ isOpen, onClose }: ControlQualifyM
                                             key={rev}
                                             onClick={() => updateField("revenue", rev)}
                                             className={`w-full p-4 rounded-xl border flex items-center justify-between group transition-all ${formData.revenue === rev
-                                                    ? "bg-acid-lime/10 border-acid-lime text-white"
-                                                    : "bg-white/5 border-white/5 text-slate-400 hover:border-white/20 hover:text-white"
+                                                ? "bg-acid-lime/10 border-acid-lime text-white"
+                                                : "bg-white/5 border-white/5 text-slate-400 hover:border-white/20 hover:text-white"
                                                 }`}
                                         >
                                             <span className="font-bold font-mono">{rev} / {t("month")}</span>
@@ -214,8 +225,8 @@ export default function ControlQualifyModal({ isOpen, onClose }: ControlQualifyM
                                             key={pain}
                                             onClick={() => updateField("painPoint", pain)}
                                             className={`w-full p-4 rounded-xl border flex items-center justify-between group transition-all ${formData.painPoint === pain
-                                                    ? "bg-acid-lime/10 border-acid-lime text-white"
-                                                    : "bg-white/5 border-white/5 text-slate-400 hover:border-white/20 hover:text-white"
+                                                ? "bg-acid-lime/10 border-acid-lime text-white"
+                                                : "bg-white/5 border-white/5 text-slate-400 hover:border-white/20 hover:text-white"
                                                 }`}
                                         >
                                             <span className="font-bold">{t(`pain_${pain}`)}</span>
@@ -244,6 +255,13 @@ export default function ControlQualifyModal({ isOpen, onClose }: ControlQualifyM
                                         placeholder={t("label_name")}
                                         value={formData.name}
                                         onChange={(e) => updateField("name", e.target.value)}
+                                        className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-4 text-white placeholder-white/30 focus:border-acid-lime focus:outline-none transition-colors"
+                                    />
+                                    <input
+                                        type="text"
+                                        placeholder="Business Name (Restaurante/Hotel/Negocio)"
+                                        value={formData.businessName}
+                                        onChange={(e) => updateField("businessName", e.target.value)}
                                         className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-4 text-white placeholder-white/30 focus:border-acid-lime focus:outline-none transition-colors"
                                     />
                                     <input
@@ -295,13 +313,13 @@ export default function ControlQualifyModal({ isOpen, onClose }: ControlQualifyM
                         </button>
                         <button
                             onClick={handleNext}
-                            disabled={!isStepValid()}
-                            className={`px-8 py-3 rounded-xl font-bold uppercase tracking-widest transition-all ${isStepValid()
-                                    ? "bg-acid-lime text-obsidian hover:bg-[#b8dd00]"
-                                    : "bg-white/10 text-white/20 cursor-not-allowed"
+                            disabled={!isStepValid() || loading}
+                            className={`px-8 py-3 rounded-xl font-bold uppercase tracking-widest transition-all ${isStepValid() && !loading
+                                ? "bg-acid-lime text-obsidian hover:bg-[#b8dd00]"
+                                : "bg-white/10 text-white/20 cursor-not-allowed"
                                 }`}
                         >
-                            {step === totalSteps ? t("finish") : t("next")}
+                            {loading ? "SENDING..." : (step === totalSteps ? t("finish") : t("next"))}
                         </button>
                     </div>
                 )}
