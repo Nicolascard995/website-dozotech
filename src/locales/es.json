@@ -48,66 +48,67 @@
   },
   "solutions": {
     "badge": "Tres Sistemas. Tres Palancas.",
-    "intro": "Tres sistemas. Tres palancas críticas de rentabilidad. Cada uno diseñado para resolver un problema específico del restaurante.",
+    "intro": "Tres sistemas, cada uno diseñado para solucionar un problema específico del restaurante y mejorar la rentabilidad.",
     "audit": {
       "id": "audit",
-      "title": "Digital Audit para Restaurantes",
-      "subtitle": "Detecta por qué tu restaurante pierde clientes antes de reservar — y qué hacer para revertirlo.",
-      "problem": "Tienes tráfico y reviews, pero no reservas. Dependes de terceros. No sabes qué canal trae dinero.",
+      "title": "Auditoría Digital para Restaurantes",
+      "subtitle": "Descubre dónde se pierden los clientes potenciales antes de reservar — y cómo convertirlos en reservas.",
+      "problem": "Te encuentran online pero pocos reservan. Dependencia excesiva de agregadores y sin una visión clara de qué canal trae realmente dinero.",
       "features": [
-        "Auditoría completa de presencia digital",
-        "Benchmark contra competidores de tu zona",
-        "Detección de fugas en el funnel",
-        "Informe accionable a 30/60/90 días"
+        "Auditoría de Google, web, redes y flujo de reserva",
+        "Benchmark contra restaurantes similares cercanos",
+        "Detección de fugas desde la búsqueda hasta el comensal sentado",
+        "Plan de acción a 30/60/90 días con prioridades claras"
       ],
-      "result": "Una hoja de ruta clara para aumentar reservas y reducir dependencia.",
-      "target": "Para restaurantes que quieren más clientes, no solo más likes.",
-      "cta": "Solicitar Digital Audit"
+      "result": "Una hoja de ruta sencilla para aumentar reservas directas y reducir la dependencia de terceros.",
+      "target": "Para restaurantes que quieren más comensales en las mesas, no solo más likes.",
+      "cta": "Solicitar Auditoría Digital"
     },
     "noshow": {
       "id": "noshow",
       "title": "No-Show Killer",
-      "subtitle": "Reduce no-shows entre un 30 y 60% sin dañar la experiencia del cliente.",
-      "problem": "Mesas vacías con personal listo. Pérdidas silenciosas. Falta de políticas claras.",
+      "subtitle": "Un sistema práctico para eliminar los no-shows sin dañar la experiencia del cliente.",
+      "problem": "Mesas bloqueadas, personal listo y algunos clientes nunca llegan. Fugas silenciosas de ingresos en cada servicio.",
       "features": [
-        "Análisis de no-shows por día/hora/canal",
-        "Cálculo del impacto real en ingresos",
-        "Diseño de política de reservas",
-        "Sistema de recordatorios y control"
+        "Análisis de no-shows por día, hora y canal",
+        "Cálculo del impacto real en los ingresos",
+        "Diseño de política de reservas para tu equipo",
+        "Sistema de recordatorios y confirmación"
       ],
-      "result": "Más mesas ocupadas, más ingresos, menos estrés operativo.",
-      "target": "Para restaurantes con reservas y alta demanda pero fugas de revenue.",
-      "cta": "Calcular impacto de mis no-shows"
+      "result": "Más mesas realmente ocupadas y menos estrés con las reservas.",
+      "target": "Para restaurantes con mucha actividad y problemas recurrentes de no-shows.",
+      "cta": "Calcular impacto de no-shows"
     },
     "efficiency": {
       "id": "efficiency",
       "title": "Eficiencia Pro",
-      "subtitle": "Encuentra y recupera el 10–20% de margen que se pierde dentro de tu operación.",
-      "problem": "Food cost alto sin explicación. Platos sin margen. Inventario a ojo.",
+      "subtitle": "Desbloquea el margen oculto en tu carta y operación diaria.",
+      "problem": "El food cost se siente alto, los platos estrella no siempre dejan beneficio y el inventario se gestiona por instinto.",
       "features": [
-        "Análisis automático de ventas y recetas",
-        "Menu engineering (Stars, Dogs...)",
-        "Detección de platos con margen negativo",
-        "Simulación de escenarios de carta"
+        "Análisis de ventas y escandallos",
+        "Menu engineering para decidir qué potenciar o arreglar",
+        "Detección de platos con margen bajo o negativo",
+        "Simulaciones sencillas de cambios en precios y menús"
       ],
-      "result": "Decisiones basadas en números. Más margen sin subir volumen.",
-      "target": "Para restaurantes que ya venden, pero no maximizan rentabilidad.",
+      "result": "Decisiones basadas en números, con más margen por servicio sin necesidad de subir el volumen a ciegas.",
+      "target": "Para restaurantes que ya venden pero no maximizan su rentabilidad.",
       "cta": "Diagnosticar mi margen"
     },
     "label_problem": "Problema",
-    "label_features": "Qué incluye",
+    "label_features": "Incluye",
     "label_result": "Resultado",
-    "label_target": "Para quién es",
+    "label_target": "Para quién",
+    "label_view_details": "Ver detalles",
     "results": {
-      "title": "Resultados del sistema en operación.",
-      "subtitle": "Lo que ocurre cuando se deja de adivinar y se toman decisiones con criterio.",
+      "title": "Resultados del sistema en restaurantes reales.",
+      "subtitle": "Lo que han logrado restaurantes similares tras sustituir las suposiciones por decisiones basadas en datos. Los resultados reales dependen del punto de partida y la ejecución.",
       "revenue": {
         "value": "+25%",
-        "label": "Beneficio Neto"
+        "label": "Beneficio Neto (hasta)"
       },
       "tables": {
         "value": "-60%",
-        "label": "Capacidad Desaprovechada"
+        "label": "Capacidad Desperdiciada (hasta)"
       }
     }
   },

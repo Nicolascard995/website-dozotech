@@ -48,66 +48,67 @@
   },
   "solutions": {
     "badge": "Three Systems. Three Levers.",
-    "intro": "Three systems. Three critical profitability levers. Each designed to solve a specific restaurant problem.",
+    "intro": "Three systems, each built to fix a specific restaurant problem and improve profitability.",
     "audit": {
       "id": "audit",
       "title": "Digital Audit for Restaurants",
-      "subtitle": "Detect why your restaurant loses customers before they book — and what to do to reverse it.",
-      "problem": "You have traffic and reviews, but no bookings. Over-reliance on aggregators. You don't know which channel brings money.",
+      "subtitle": "See where potential guests drop off before booking — and how to turn them into reservations.",
+      "problem": "People find you online but too few reserve. Heavy dependence on aggregators and no clear view of which channel really brings money.",
       "features": [
-        "Full digital presence audit",
-        "Benchmark against local competitors",
-        "Funnel leak detection",
-        "Actionable report (30/60/90 days)"
+        "Audit of Google, website, social and booking flow",
+        "Benchmark against similar restaurants nearby",
+        "Detection of drop-offs from search to seated guest",
+        "30/60/90-day action plan with clear priorities"
       ],
-      "result": "A clear roadmap to increase bookings and reduce dependency.",
-      "target": "For restaurants wanting customers, not just likes.",
+      "result": "A simple roadmap to grow direct bookings and reduce dependency on third parties.",
+      "target": "For restaurants that want more guests at tables, not just more likes.",
       "cta": "Request Digital Audit"
     },
     "noshow": {
       "id": "noshow",
       "title": "No-Show Killer",
-      "subtitle": "Reduce no-shows by 30-60% without hurting the customer experience.",
-      "problem": "Empty tables with staff ready. Silent losses. Lack of clear policies.",
+      "subtitle": "A practical system to cut no-shows without hurting the guest experience.",
+      "problem": "Tables are blocked, staff is ready, and some guests never arrive. Silent revenue leaks every service.",
       "features": [
-        "No-show analysis by day/time/channel",
+        "No-show analysis by day, time and channel",
         "Calculation of real revenue impact",
-        "Reservation policy design",
-        "Reminder and control system"
+        "Reservation policy design for your team",
+        "Reminder and confirmation system"
       ],
-      "result": "More occupied tables, more revenue, less operational stress.",
-      "target": "For busy restaurants with revenue leaks.",
+      "result": "More tables actually occupied and less stress around reservations.",
+      "target": "For busy restaurants with recurring no-show problems.",
       "cta": "Calculate no-show impact"
     },
     "efficiency": {
       "id": "efficiency",
       "title": "Efficiency Pro",
-      "subtitle": "Find and recover the 10–20% margin lost within your operation.",
-      "problem": "High food cost without clear explanation. Dishes without margin. Intuitive inventory.",
+      "subtitle": "Uncover margin hidden in your menu and daily operation.",
+      "problem": "Food cost feels high, best-sellers don’t always leave profit, and inventory is managed mostly by feel.",
       "features": [
-        "Automated sales and recipe analysis",
-        "Menu engineering (Stars, Dogs...)",
-        "Detection of negative margin dishes",
-        "Menu scenario simulation"
+        "Sales and recipe analysis",
+        "Menu engineering to decide what to push or fix",
+        "Detection of low or negative margin dishes",
+        "Simple simulations of price and menu changes"
       ],
-      "result": "Decisions based on numbers. More margin without increasing volume.",
-      "target": "For restaurants that sell but don't maximize profitability.",
+      "result": "Decisions based on numbers, with more margin per service without blindly increasing volume.",
+      "target": "For restaurants that already sell but don’t fully maximize profitability.",
       "cta": "Diagnose my margin"
     },
     "label_problem": "Problem",
     "label_features": "Includes",
     "label_result": "Result",
     "label_target": "For whom",
+    "label_view_details": "View details",
     "results": {
-      "title": "System Results in Operation.",
-      "subtitle": "What happens when you stop guessing and start deciding with criteria.",
+      "title": "System results in real restaurants.",
+      "subtitle": "What similar restaurants have achieved after replacing guesswork with data-driven decisions. Actual results depend on starting point and execution.",
       "revenue": {
         "value": "+25%",
-        "label": "Net Profit"
+        "label": "Net Profit (up to)"
       },
       "tables": {
         "value": "-60%",
-        "label": "Wasted Capacity"
+        "label": "Wasted Capacity (up to)"
       }
     }
   },

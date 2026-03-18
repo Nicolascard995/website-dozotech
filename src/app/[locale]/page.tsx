@@ -28,10 +28,10 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         <>
             <Navbar />
             <Hero />
+            <SolutionsGrid />
             <FounderBanner />
             <AboutSection />
             <Methodology />
-            <SolutionsGrid />
             <ShieldSection />
             <BlogCarousel locale={locale} />
             <Footer />

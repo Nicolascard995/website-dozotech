@@ -48,66 +48,67 @@
   },
   "solutions": {
     "badge": "Drei Systeme. Drei Hebel.",
-    "intro": "Drei Systeme. Drei kritische Rentabilitätshebel. Jedes entwickelt, um ein spezifisches Restaurantproblem zu lösen.",
+    "intro": "Drei Systeme, jedes entwickelt, um ein spezifisches Restaurantproblem zu lösen und die Profitabilität zu steigern.",
     "audit": {
       "id": "audit",
-      "title": "Digital Audit für Restaurants",
-      "subtitle": "Erkenne, warum dein Restaurant Gäste verliert, bevor sie reservieren – und was du dagegen tun kannst.",
-      "problem": "Du hast Traffic und Bewertungen, aber keine Reservierungen. Zu viel Abhängigkeit von Drittanbietern. Du weißt nicht, welcher Kanal Geld bringt.",
+      "title": "Digitales Audit für Restaurants",
+      "subtitle": "Erkennen Sie, wo potenzielle Gäste vor der Buchung abspringen – und wie Sie diese in Reservierungen umwandeln.",
+      "problem": "Menschen finden Sie online, aber zu wenige reservieren. Zu hohe Abhängigkeit von Plattformen und kein klarer Blick darauf, welcher Kanal wirklich Geld bringt.",
       "features": [
-        "Vollständiges Audit der digitalen Präsenz",
-        "Benchmark gegen lokale Konkurrenten",
-        "Erkennung von Funnel-Leaks",
-        "Umsetzbarer Bericht (30/60/90 Tage)"
+        "Audit von Google, Website, Social Media und Buchungsfluss",
+        "Benchmark-Vergleich mit ähnlichen Restaurants in der Nähe",
+        "Erkennung von Absprüngen von der Suche bis zum sitzenden Gast",
+        "30/60/90-Tage-Aktionsplan mit klaren Prioritäten"
       ],
-      "result": "Ein klarer Fahrplan für mehr Reservierungen und weniger Abhängigkeit.",
-      "target": "Für Restaurants, die Gäste wollen, nicht nur Likes.",
-      "cta": "Digital Audit anfordern"
+      "result": "Ein einfacher Fahrplan zur Steigerung von Direktbuchungen und Reduzierung der Abhängigkeit von Drittanbietern.",
+      "target": "Für Restaurants, die mehr Gäste an den Tischen wollen, nicht nur mehr Likes.",
+      "cta": "Digitales Audit anfordern"
     },
     "noshow": {
       "id": "noshow",
       "title": "No-Show Killer",
-      "subtitle": "Reduziere No-Shows um 30-60%, ohne das Gästeerlebnis zu beeinträchtigen.",
-      "problem": "Leere Tische bei bereitstehendem Personal. Stille Verluste. Mangel an klaren Richtlinien.",
+      "subtitle": "Ein praktisches System, um No-Shows zu reduzieren, ohne das Gästeerlebnis zu beeinträchtigen.",
+      "problem": "Tische sind blockiert, das Personal ist bereit, und einige Gäste erscheinen nie. Stille Umsatzverluste in jedem Service.",
       "features": [
-        "No-Show-Analyse nach Tag/Zeit/Kanal",
+        "No-Show-Analyse nach Tag, Uhrzeit und Kanal",
         "Berechnung der realen Umsatzauswirkungen",
-        "Entwurf einer Reservierungsrichtlinie",
-        "Erinnerungs- und Kontrollsystem"
+        "Design von Reservierungsrichtlinien für Ihr Team",
+        "Erinnerungs- und Bestätigungssystem"
       ],
-      "result": "Mehr besetzte Tische, mehr Umsatz, weniger operativer Stress.",
-      "target": "Für Restaurants mit Reservierungen und Umsatzlecks.",
-      "cta": "Auswirkung berechnen"
+      "result": "Mehr tatsächlich belegte Tische und weniger Stress rund um Reservierungen.",
+      "target": "Für vielbeschäftigte Restaurants mit wiederkehrenden No-Show-Problemen.",
+      "cta": "No-Show-Einfluss berechnen"
     },
     "efficiency": {
       "id": "efficiency",
       "title": "Effizienz Pro",
-      "subtitle": "Finde und rette die 10–20% Marge, die in deiner Operation verloren gehen.",
-      "problem": "Hoher Wareneinsatz ohne klare Erklärung. Gerichte ohne Marge. Inventur nach Augenmaß.",
+      "subtitle": "Decken Sie versteckte Margen in Ihrer Karte und Ihrem täglichen Betrieb auf.",
+      "problem": "Der Wareneinsatz fühlt sich hoch an, Bestseller lassen nicht immer Gewinn übrig, und das Inventar wird meist nach Gefühl verwaltet.",
       "features": [
-        "Automatisierte Verkaufs- und Rezeptanalyse",
-        "Menu Engineering (Stars, Dogs...)",
-        "Erkennung von Gerichten mit negativer Marge",
-        "Simulation von Menü-Szenarien"
+        "Umsatz- und Rezepturanalyse",
+        "Speiskarten-Engineering: Entscheiden, was gefördert oder korrigiert werden muss",
+        "Erkennung von Gerichten mit geringer oder negativer Marge",
+        "Einfache Simulationen von Preis- und Speisekartenänderungen"
       ],
-      "result": "Entscheidungen basierend auf Zahlen. Mehr Marge ohne mehr Volumen.",
-      "target": "Für Restaurants, die verkaufen, aber nicht profitabel genug sind.",
-      "cta": "Marge diagnostizieren"
+      "result": "Entscheidungen basierend auf Zahlen, mit mehr Marge pro Service, ohne blind das Volumen zu erhöhen.",
+      "target": "Für Restaurants, die bereits verkaufen, aber ihre Profitabilität nicht voll ausschöpfen.",
+      "cta": "Meine Marge diagnostizieren"
     },
     "label_problem": "Problem",
-    "label_features": "Enthält",
+    "label_features": "Beinhaltet",
     "label_result": "Ergebnis",
     "label_target": "Für wen",
+    "label_view_details": "Details anzeigen",
     "results": {
-      "title": "Systemergebnisse im Betrieb.",
-      "subtitle": "Was passiert, wenn man aufhört zu raten und anfängt, mit Kriterien zu entscheiden.",
+      "title": "Systemergebnisse in echten Restaurants.",
+      "subtitle": "Was ähnliche Restaurants erreicht haben, nachdem sie Vermutungen durch datengesteuerte Entscheidungen ersetzt haben. Die tatsächlichen Ergebnisse hängen vom Ausgangspunkt und der Ausführung ab.",
       "revenue": {
         "value": "+25%",
-        "label": "Nettogewinn"
+        "label": "Nettogewinn (bis zu)"
       },
       "tables": {
         "value": "-60%",
-        "label": "Verschwendete Kapazität"
+        "label": "Verschwendete Kapazität (bis zu)"
       }
     }
   },
