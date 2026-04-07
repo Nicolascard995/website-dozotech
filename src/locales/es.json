@@ -4,7 +4,12 @@
     "solutions": "Herramientas",
     "cases": "Resultados",
     "blog": "Criterio",
-    "audit": "Auditoría Gratis"
+    "audit": "Auditoría Gratis",
+    "about": "Nosotros",
+    "how_it_works": "Cómo funciona",
+    "results": "Resultados",
+    "contact": "Contacto",
+    "cta": "Acceso anticipado"
   },
   "Hero": {
     "title_part1": "Vende más.",
@@ -13,7 +18,15 @@
     "subtitle_highlight": "pierde dinero",
     "subtitle_suffix": ". Yo detengo esa fuga desde fuera de tu operación, sin pisar tu cocina ni interferir en tu gestión diaria.",
     "remote": "100% remoto. Operación invisible.",
-    "cta": "Recuperar mi margen"
+    "cta": "Recuperar mi margen",
+    "eyebrow": "Hecho por un chef",
+    "line1": "El OS de cocina que te",
+    "line2": "devuelve la razón",
+    "line3": "por la que cocinás.",
+    "subtitle": "Le Sous Chef se encarga del admin, los costos, el caos — para que vos puedas enfocarte en la comida.",
+    "cta_primary": "Unirse a la lista",
+    "cta_secondary": "Cómo funciona",
+    "scroll": "scroll"
   },
   "FounderBanner": {
     "text": "• PROGRAMA PIONEROS: BUSCO MIS PRIMEROS 5 CASOS DE ÉXITO • AUDITORÍA SIN RIESGO • SIN ACCESO A TUS IMPUESTOS •"

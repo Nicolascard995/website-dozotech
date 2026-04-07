@@ -4,7 +4,12 @@
     "solutions": "Lösungen",
     "cases": "Fälle",
     "blog": "Blog",
-    "audit": "Termin vereinbaren"
+    "audit": "Termin vereinbaren",
+    "about": "Über uns",
+    "how_it_works": "So funktioniert's",
+    "results": "Ergebnisse",
+    "contact": "Kontakt",
+    "cta": "Frühen Zugang"
   },
   "Hero": {
     "title_part1": "Mehr verkaufen.",
@@ -13,7 +18,15 @@
     "subtitle_highlight": "verliert Geld",
     "subtitle_suffix": ". Ich stoppe dieses Leck von außerhalb Ihres Betriebs, ohne Ihre Küche zu betreten oder Ihr Tagesgeschäft zu stören.",
     "remote": "100% Remote. Unsichtbarer Betrieb.",
-    "cta": "Marge zurückgewinnen"
+    "cta": "Marge zurückgewinnen",
+    "eyebrow": "Von einem Koch gebaut",
+    "line1": "Das Küchen-OS, das dir",
+    "line2": "den Grund zurückgibt,",
+    "line3": "warum du kochst.",
+    "subtitle": "Le Sous Chef übernimmt Admin, Kosten, das Chaos — damit du dich aufs Wesentliche konzentrierst.",
+    "cta_primary": "Zur Warteliste",
+    "cta_secondary": "So funktioniert's",
+    "scroll": "scrollen"
   },
   "FounderBanner": {
     "text": "• PIONIER-PROGRAMM: SUCHE MEINE ERSTEN 5 ERFOLGSGESCHICHTEN • KOSTENLOSES AUDIT • KEIN RISIKO • BEGRENZTE PLÄTZE •"

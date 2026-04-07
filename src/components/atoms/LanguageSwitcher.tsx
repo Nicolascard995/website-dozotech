@@ -12,28 +12,27 @@ export default function LanguageSwitcher() {
         router.replace(pathname, { locale: newLocale });
     };
 
+    const langs = ['es', 'en', 'de'] as const;
+
     return (
-        <div className="flex items-center gap-3 text-xs font-bold tracking-widest">
-            <button
-                onClick={() => switchLocale('es')}
-                className={`transition-colors duration-300 ${locale === 'es' ? 'text-cyan' : 'text-slate-500 hover:text-white'}`}
-            >
-                ES
-            </button>
-            <span className="text-slate-700">/</span>
-            <button
-                onClick={() => switchLocale('en')}
-                className={`transition-colors duration-300 ${locale === 'en' ? 'text-cyan' : 'text-slate-500 hover:text-white'}`}
-            >
-                EN
-            </button>
-            <span className="text-slate-700">/</span>
-            <button
-                onClick={() => switchLocale('de')}
-                className={`transition-colors duration-300 ${locale === 'de' ? 'text-cyan' : 'text-slate-500 hover:text-white'}`}
-            >
-                DE
-            </button>
+        <div className="flex items-center gap-3 font-mono text-xs tracking-widest">
+            {langs.map((lang, i) => (
+                <span key={lang} className="flex items-center gap-3">
+                    <button
+                        onClick={() => switchLocale(lang)}
+                        className={`transition-colors duration-200 uppercase ${
+                            locale === lang
+                                ? 'text-ember font-medium'
+                                : 'text-ink-muted hover:text-ink'
+                        }`}
+                    >
+                        {lang}
+                    </button>
+                    {i < langs.length - 1 && (
+                        <span className="text-ink-muted/40">/</span>
+                    )}
+                </span>
+            ))}
         </div>
     );
 }

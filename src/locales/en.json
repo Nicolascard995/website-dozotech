@@ -4,7 +4,12 @@
     "solutions": "Solutions",
     "cases": "Cases",
     "blog": "Blog",
-    "audit": "Book Audit"
+    "audit": "Book Audit",
+    "about": "About",
+    "how_it_works": "How it works",
+    "results": "Results",
+    "contact": "Contact",
+    "cta": "Get early access"
   },
   "Hero": {
     "title_part1": "Sell more.",
@@ -13,7 +18,15 @@
     "subtitle_highlight": "is losing money",
     "subtitle_suffix": ". I stop that leak from outside your operation, without stepping into your kitchen or interfering with your daily management.",
     "remote": "100% remote. Silent operation.",
-    "cta": "Reclaim my margin"
+    "cta": "Reclaim my margin",
+    "eyebrow": "Built by a chef",
+    "line1": "The kitchen OS that",
+    "line2": "gives you back",
+    "line3": "the reason you cook.",
+    "subtitle": "Le Sous Chef handles the admin, the costs, the chaos — so you can focus on the food.",
+    "cta_primary": "Join the waitlist",
+    "cta_secondary": "See how it works",
+    "scroll": "scroll"
   },
   "FounderBanner": {
     "text": "• PIONEER PROGRAM: SEEKING MY FIRST 5 SUCCESS STORIES • NO-RISK AUDIT • NO TAX ACCESS REQUIRED •"
