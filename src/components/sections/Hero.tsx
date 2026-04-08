@@ -27,7 +27,7 @@ export default function Hero() {
     const t = useTranslations('Hero');
 
     return (
-        <section className="relative min-h-screen flex items-end overflow-hidden">
+        <section className="relative min-h-[100svh] md:min-h-screen overflow-hidden">
             <div className="absolute inset-0 z-0">
                 <video
                     className="absolute inset-0 w-full h-full object-cover"
@@ -44,22 +44,28 @@ export default function Hero() {
             </div>
 
             <div
-                className="relative z-10 flex flex-col w-full pt-28 pb-24"
+                className="relative z-10 grid min-h-[100svh] md:min-h-screen w-full"
                 style={{ paddingLeft: 'clamp(20px, 5vw, 80px)', paddingRight: 'clamp(20px, 5vw, 80px)' }}
             >
-                <div className="max-w-[760px]">
-                    <div className="animate-fade-up d1 flex items-center gap-2 text-ember font-mono text-xs tracking-widest uppercase mb-6">
+                <div
+                    className="max-w-[700px] self-center w-full"
+                    style={{
+                        paddingTop: 'clamp(74px, 9vh, 108px)',
+                        paddingBottom: 'clamp(72px, 10vh, 116px)',
+                    }}
+                >
+                    <div className="animate-fade-up d1 flex items-center gap-2 text-ember font-mono text-[11px] tracking-widest uppercase mb-4">
                         <KnifeIcon />
                         <span>{t('eyebrow')}</span>
                     </div>
 
-                    <p className="animate-fade-up d2 font-mono text-[12px] uppercase tracking-[0.42em] text-cream/78 mb-5">
+                    <p className="animate-fade-up d2 font-mono text-[11px] uppercase tracking-[0.4em] text-cream/78 mb-4">
                         Le Sous Chef
                     </p>
 
                     <h1
-                        className="animate-fade-up d3 font-display font-normal text-cream leading-[1.02] mb-8"
-                        style={{ fontSize: 'clamp(46px, 7vw, 92px)' }}
+                        className="animate-fade-up d3 font-display font-normal text-cream leading-[0.97] mb-6 md:mb-7"
+                        style={{ fontSize: 'clamp(40px, 5.8vw, 78px)' }}
                     >
                         <span className="block">{t('line1')}</span>
                         <span className="block italic">{t('line2')}</span>
@@ -67,8 +73,8 @@ export default function Hero() {
                     </h1>
 
                     <p
-                        className="animate-fade-up d4 font-body font-light text-cream/76 max-w-[620px] mb-10 leading-relaxed"
-                        style={{ fontSize: 'clamp(17px, 2vw, 21px)' }}
+                        className="animate-fade-up d4 font-body font-light text-cream/76 max-w-[620px] mb-7 md:mb-8 leading-[1.42]"
+                        style={{ fontSize: 'clamp(15px, 1.65vw, 19px)' }}
                     >
                         {t('subtitle')}
                     </p>
@@ -76,19 +82,19 @@ export default function Hero() {
                     <div className="animate-fade-up d5 flex flex-wrap gap-4">
                         <a
                             href="#contact"
-                            className="bg-ember text-cream text-sm font-medium px-6 py-3 rounded-[3px] hover:opacity-90 transition-opacity"
+                            className="bg-ember text-cream text-sm font-medium px-6 py-[0.7rem] rounded-[3px] hover:opacity-90 transition-opacity"
                         >
                             {t('cta_primary')}
                         </a>
                         <a
                             href="#how-it-works"
-                            className="border border-cream/40 text-cream bg-transparent text-sm font-medium px-6 py-3 rounded-[3px] hover:bg-cream/10 transition-colors"
+                            className="border border-cream/40 text-cream bg-transparent text-sm font-medium px-6 py-[0.7rem] rounded-[3px] hover:bg-cream/10 transition-colors"
                         >
                             {t('cta_secondary')}
                         </a>
                     </div>
 
-                    <p className="animate-fade-up d5 mt-6 font-mono text-[11px] uppercase tracking-[0.24em] text-cream/56">
+                    <p className="animate-fade-up d5 mt-4 font-mono text-[10px] uppercase tracking-[0.22em] text-cream/56">
                         {t('support')}
                     </p>
                 </div>
