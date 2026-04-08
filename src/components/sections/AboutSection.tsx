@@ -16,13 +16,13 @@ export default function AboutSection() {
         >
             <div className="max-w-[1200px] mx-auto grid lg:grid-cols-[0.95fr_1.05fr] gap-14 lg:gap-16 items-center">
                 <ScrollReveal mode="zoom">
-                    <div className="relative overflow-hidden rounded-[28px] bg-ink min-h-[420px]">
+                    <div className="relative w-full max-w-[520px] aspect-[3/4] overflow-hidden rounded-[28px] bg-ink">
                         <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/15 to-transparent z-10" />
                         <Image
-                            src="/images/chef_profile.png"
+                            src="/images/consultant_profile.png"
                             alt="Le Sous Chef"
                             fill
-                            sizes="(max-width: 1024px) 100vw, 45vw"
+                            sizes="(max-width: 1024px) 100vw, 40vw"
                             className="object-cover grayscale"
                         />
                         <div className="absolute bottom-0 left-0 right-0 z-20 p-8 md:p-10">
