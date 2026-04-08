@@ -1,10 +1,15 @@
 {
   "Navbar": {
     "methodology": "Cómo lo hago",
-    "solutions": "Herramientas",
+    "solutions": "Qué incluye",
     "cases": "Resultados",
     "blog": "Criterio",
-    "audit": "Auditoría Gratis"
+    "audit": "Auditoría Gratis",
+    "about": "Nosotros",
+    "how_it_works": "Cómo funciona",
+    "results": "Resultados",
+    "contact": "Contacto",
+    "cta": "Dejar contacto"
   },
   "Hero": {
     "title_part1": "Vende más.",
@@ -13,38 +18,98 @@
     "subtitle_highlight": "pierde dinero",
     "subtitle_suffix": ". Yo detengo esa fuga desde fuera de tu operación, sin pisar tu cocina ni interferir en tu gestión diaria.",
     "remote": "100% remoto. Operación invisible.",
-    "cta": "Recuperar mi margen"
+    "cta": "Recuperar mi margen",
+    "eyebrow": "Para cocinas independientes",
+    "line1": "Orden para la cocina.",
+    "line2": "Control para",
+    "line3": "el negocio.",
+    "subtitle": "Una plataforma para brigada, recetas, inventario y números pensada para dueños y chef-propietarios que siguen en el día a día del servicio.",
+    "cta_primary": "Quiero que me contacten",
+    "cta_secondary": "Cómo funciona",
+    "scroll": "seguir",
+    "support": "Etapa temprana. Acceso anticipado y contacto cercano."
   },
   "FounderBanner": {
-    "text": "• PROGRAMA PIONEROS: BUSCO MIS PRIMEROS 5 CASOS DE ÉXITO • AUDITORÍA SIN RIESGO • SIN ACCESO A TUS IMPUESTOS •"
+    "text": "• COCINA REAL • SISTEMAS CLAROS • MENOS IMPROVISACIÓN • MÁS CONTROL •"
   },
   "About": {
-    "badge": "Cocinero + Data Head",
-    "title": "Hablo sucio en la cocina. Hablo claro en los números.",
-    "description1": "No soy un consultor de escritorio. He fundado dark kitchens y dirigido brigadas desde Tulum hasta Alemania. Conozco el calor del servicio y la rabia de trabajar gratis porque los costos no cierran.",
-    "quote": "\"La comida buena no se vende sola. Se vende si deja dinero real en tu bolsillo.\"",
-    "description2": "Uní la disciplina del fine dining con el álgebra lineal. Mi trabajo es que tú te concentres en el pase mientras yo me aseguro de que cada ticket facture beneficio neto, no solo facturación bruta.",
-    "image_quote": "Hablo tu idioma: Oído cocina. Oído caja.",
-    "efficiency_label": "Cupos de Pionero Libres"
+    "badge": "Sobre el proyecto",
+    "title": "Le Sous Chef nace entre servicio y sistemas.",
+    "description1": "Somos un equipo que conoce de cerca lo que significan brigadas pequeñas, inventarios tensos y semanas donde casi todo depende del chef o del dueño.",
+    "quote": "\"No hace falta otra capa de burocracia. Hace falta más claridad para operar mejor.\"",
+    "description2": "Por eso estamos construyendo una herramienta que acompaña la forma en que ya trabaja una cocina independiente: ordena recetas, inventario, brigada y números sin pedirte que te conviertas en administrador de software.",
+    "image_quote": "Cocina real por delante. Sistemas claros por detrás.",
+    "efficiency_label": "Cupos de Pionero Libres",
+    "principle_1": "Pensado para cocinas independientes y pequeños grupos.",
+    "principle_2": "Hecho para equipos que siguen cerca del servicio.",
+    "principle_3": "Diseñado para cuidar márgenes sin sumar más escritorio."
   },
   "Methodology": {
-    "title": "Mise en Place Digital",
-    "subtitle": "Igual que en cocina: si no hay preparación, no hay servicio. Antes de vender más, ponemos la casa en orden.",
+    "badge": "Cómo funciona",
+    "title": "Una base más clara para operar con menos caos.",
+    "subtitle": "Le Sous Chef no viene a reemplazar tu criterio. Viene a ordenar la operación para que vos y tu equipo trabajen con más estructura y más visibilidad.",
     "steps": {
       "01": {
-        "title": "Limpieza",
-        "desc": "Eliminamos el ruido digital y operativo. Identificamos lo que sobra, lo que falta y lo que está frenando tu crecimiento."
+        "title": "Entendemos tu operación",
+        "desc": "Miramos cómo trabaja hoy tu cocina: brigada, recetas, inventario y rutina de servicio."
       },
       "02": {
-        "title": "Orden",
-        "desc": "Cada dato en su sitio. Implementamos sistemas de medición para que sepas exactamente qué pasa en tu negocio en tiempo real."
+        "title": "Ordenamos la base",
+        "desc": "Estructuramos la información clave para que el equipo tenga contexto y el negocio tenga más claridad."
       },
       "03": {
-        "title": "Ejecución",
-        "desc": "Con todo listo, abrimos el grifo. Estrategias precisas sobre una base sólida para escalar sin romper la operativa.",
-        "cta": "Ver mi diagnóstico"
+        "title": "Operás con más control",
+        "desc": "Cuando abramos acceso, acompañamos la implementación de cerca para que usarlo no signifique más burocracia."
+      }
+    },
+    "footnote": "Etapa temprana significa más cercanía: menos ruido comercial y más conversación útil sobre cómo encaja en tu cocina."
+  },
+  "Includes": {
+    "badge": "Qué incluye",
+    "title": "Todo lo necesario para ordenar la operación sin convertirla en un sistema pesado.",
+    "intro": "Pensado para cocinas donde el chef o el dueño sigue metido en el servicio y necesita más estructura para delegar, formar al equipo y cuidar los márgenes.",
+    "items": {
+      "01": {
+        "title": "Orden operativo",
+        "body": "Centralizá lo que hoy vive disperso entre papel, WhatsApp, memoria y planillas sueltas.",
+        "detail": "Rutinas, contexto y menos incendios diarios."
+      },
+      "02": {
+        "title": "Recetas e inventario",
+        "body": "Poné en claro recetas, rendimientos, insumos y movimientos para trabajar con menos improvisación.",
+        "detail": "Más consistencia para cocinar y comprar."
+      },
+      "03": {
+        "title": "Brigada y formación",
+        "body": "Dale al equipo una base más clara para ejecutar, aprender y depender menos de una sola persona.",
+        "detail": "Mejor delegación y onboarding más simple."
+      },
+      "04": {
+        "title": "Números más claros",
+        "body": "Entendé mejor costos, inventario y márgenes sin abrir diez archivos ni vivir en el escritorio.",
+        "detail": "Más criterio para decidir qué cuidar primero."
       }
     }
+  },
+  "Waitlist": {
+    "eyebrow": "Dejanos tu contacto",
+    "title": "Si Le Sous Chef te puede servir, te escribimos cuando abra acceso.",
+    "subtitle": "Estamos terminando el producto. Eso nos permite hablar de cerca con cocinas que quieran entrar antes, ver si encaja y ayudarnos a darle forma.",
+    "benefit_1": "Acceso temprano para cocinas con interés real.",
+    "benefit_2": "Contacto directo cuando tengamos algo concreto para mostrar.",
+    "benefit_3": "Una etapa más cercana para escuchar cómo operás hoy.",
+    "nameLabel": "Nombre",
+    "restaurantLabel": "Restaurante",
+    "roleLabel": "Cargo",
+    "emailLabel": "Email",
+    "namePlaceholder": "Tu nombre",
+    "restaurantPlaceholder": "Nombre del restaurante",
+    "rolePlaceholder": "Chef-propietario, dueño, gerente...",
+    "emailPlaceholder": "tu@email.com",
+    "submit": "Quiero que me contacten",
+    "note": "Sin spam. Solo te escribimos cuando haya algo relevante para tu cocina.",
+    "successTitle": "Gracias.",
+    "successBody": "Recibimos tus datos. Te vamos a escribir cuando abramos acceso o tengamos algo concreto para mostrarte."
   },
   "solutions": {
     "badge": "Tres Sistemas. Tres Palancas.",
@@ -149,7 +214,9 @@
     "tagline": "SYSTEMS THAT BREATHE"
   },
   "Metadata": {
-    "keywords": "Consultoría Gastronómica, Margen Restaurante, Auditoría Costos, Rentabilidad Real, Gestión Discreta"
+    "title": "Software operativo para cocinas independientes",
+    "description": "Ordená la operación, entendé mejor tus números y trabajá con más control. Le Sous Chef está hecho para dueños y chef-propietarios de cocinas independientes.",
+    "keywords": "software operativo cocina, gestion restaurante independiente, recetas inventario margenes, chef propietario, le sous chef"
   },
   "ShieldCalculator": {
     "title_input": "Deja de quemar dinero.",

@@ -1,10 +1,15 @@
 {
   "Navbar": {
     "methodology": "Methodik",
-    "solutions": "Lösungen",
+    "solutions": "Was drin ist",
     "cases": "Fälle",
     "blog": "Blog",
-    "audit": "Termin vereinbaren"
+    "audit": "Termin vereinbaren",
+    "about": "Über uns",
+    "how_it_works": "So funktioniert's",
+    "results": "Ergebnisse",
+    "contact": "Kontakt",
+    "cta": "Kontakt hinterlassen"
   },
   "Hero": {
     "title_part1": "Mehr verkaufen.",
@@ -13,38 +18,98 @@
     "subtitle_highlight": "verliert Geld",
     "subtitle_suffix": ". Ich stoppe dieses Leck von außerhalb Ihres Betriebs, ohne Ihre Küche zu betreten oder Ihr Tagesgeschäft zu stören.",
     "remote": "100% Remote. Unsichtbarer Betrieb.",
-    "cta": "Marge zurückgewinnen"
+    "cta": "Marge zurückgewinnen",
+    "eyebrow": "Für unabhängige Küchen",
+    "line1": "Ordnung für die Küche.",
+    "line2": "Kontrolle für",
+    "line3": "den Betrieb.",
+    "subtitle": "Eine Plattform für Teamabläufe, Rezepte, Inventar und wichtige Kennzahlen, gebaut für Inhaber und Chef-Eigentümer, die noch nah am Service sind.",
+    "cta_primary": "Ich will kontaktiert werden",
+    "cta_secondary": "So funktioniert es",
+    "scroll": "weiter",
+    "support": "Frühe Phase. Früher Zugang und direkter Kontakt."
   },
   "FounderBanner": {
-    "text": "• PIONIER-PROGRAMM: SUCHE MEINE ERSTEN 5 ERFOLGSGESCHICHTEN • KOSTENLOSES AUDIT • KEIN RISIKO • BEGRENZTE PLÄTZE •"
+    "text": "• ECHTE KÜCHEN • KLARE SYSTEME • WENIGER FEUERLÖSCHEN • MEHR KONTROLLE •"
   },
   "About": {
-    "badge": "Culinary Data Scientist",
-    "title": "In der Küche getestet. Durch Algorithmen veredelt.",
-    "description1": "Ich bin kein Schreibtischtäter. Ich habe während der Pandemie eine Dark Kitchen gegründet und Teams von Tulum bis Lüneburg geleitet. Ich kenne den Druck des Service und die kalte Realität der Daten.",
-    "quote": "\"Ich habe Gastronomie-Erfahrung mit Data Science kombiniert, um das Raten in der Kalkulation zu beenden.\"",
-    "description2": "Daten sind das neue Mise en Place. Ich habe mein Handwerk professionalisiert, damit Sie sich auf das Kochen konzentrieren können, während ich dafür sorge, dass jedes Gericht zu Ihrem Gewinn beiträgt.",
-    "image_quote": "Ich kenne Ihren Alltag. Ich kenne Ihre Zahlen.",
-    "efficiency_label": "Pionier-Plätze frei"
+    "badge": "Zum Projekt",
+    "title": "Le Sous Chef entsteht zwischen Service und Systemen.",
+    "description1": "Wir sind ein Team, das kleine Brigaden, knappe Bestände und Wochen kennt, in denen fast alles noch am Chef oder Inhaber hängt.",
+    "quote": "\"Es braucht nicht noch eine Schicht Bürokratie. Es braucht mehr Klarheit, um den Betrieb besser zu führen.\"",
+    "description2": "Deshalb bauen wir ein Werkzeug, das sich an die reale Arbeitsweise unabhängiger Küchen anpasst: Es ordnet Rezepte, Inventar, Teamabläufe und Zahlen, ohne dass Sie zum Software-Administrator werden müssen.",
+    "image_quote": "Echte Küche vorne. Klare Systeme dahinter.",
+    "efficiency_label": "Pionier-Plätze frei",
+    "principle_1": "Gedacht für unabhängige Küchen und kleine Gruppen.",
+    "principle_2": "Gemacht für Teams, die noch nah am Service arbeiten.",
+    "principle_3": "Entwickelt, um Margen zu schützen, ohne mehr Schreibtischarbeit zu erzeugen."
   },
   "Methodology": {
-    "title": "Digital Mise en Place",
-    "subtitle": "Wie in der Küche: Ohne Vorbereitung kein Service. Bevor wir mehr verkaufen, bringen wir Ordnung ins Haus.",
+    "badge": "So funktioniert es",
+    "title": "Eine klarere operative Basis mit weniger täglichem Chaos.",
+    "subtitle": "Le Sous Chef soll Ihr Urteilsvermögen nicht ersetzen. Es soll den Betrieb so ordnen, dass Ihr Team mit mehr Struktur und Transparenz arbeiten kann.",
     "steps": {
       "01": {
-        "title": "Bereinigung",
-        "desc": "Wir eliminieren digitales und operatives Rauschen. Wir identifizieren, was überflüssig ist, was fehlt und was dein Wachstum bremst."
+        "title": "Wir verstehen Ihren Betrieb",
+        "desc": "Wir schauen, wie Ihre Küche heute arbeitet: Teamabläufe, Rezepte, Inventar und Servicefluss."
       },
       "02": {
-        "title": "Ordnung",
-        "desc": "Jede Datenbasis an ihrem Platz. Wir implementieren Messsysteme, damit du genau weißt, was in deinem Geschäft in Echtzeit passiert."
+        "title": "Wir ordnen die Basis",
+        "desc": "Wir strukturieren die Schlüsselinformationen, damit das Team mehr Kontext und der Betrieb mehr Klarheit bekommt."
       },
       "03": {
-        "title": "Ausführung",
-        "desc": "Wenn alles bereit ist, drehen wir den Hahn auf. Präzise Strategien auf solidem Fundament, um zu skalieren, ohne den Betrieb zu stören.",
-        "cta": "Diagnose ansehen"
+        "title": "Sie arbeiten mit mehr Kontrolle",
+        "desc": "Wenn der Zugang öffnet, begleiten wir die Einführung eng, damit die Nutzung nicht mehr Bürokratie bedeutet."
+      }
+    },
+    "footnote": "Frühe Phase heißt auch mehr Nähe: weniger Verkaufslärm und mehr sinnvolles Gespräch darüber, ob es zu Ihrer Küche passt."
+  },
+  "Includes": {
+    "badge": "Was drin ist",
+    "title": "Alles, was Sie brauchen, um den Betrieb zu ordnen, ohne ein schweres System einzuführen.",
+    "intro": "Gedacht für Küchen, in denen Chef oder Inhaber noch nah am Service sind und mehr Struktur brauchen, um zu delegieren, das Team einzuarbeiten und die Marge zu schützen.",
+    "items": {
+      "01": {
+        "title": "Operative Ordnung",
+        "body": "Bringen Sie zusammen, was heute über Papier, WhatsApp, Erinnerung und lose Tabellen verteilt ist.",
+        "detail": "Mehr Kontext und weniger tägliches Feuerlöschen."
+      },
+      "02": {
+        "title": "Rezepte und Inventar",
+        "body": "Schaffen Sie Klarheit bei Rezepten, Ausbeuten, Zutaten und Warenbewegungen, damit das Team mit weniger Improvisation arbeitet.",
+        "detail": "Mehr Konstanz beim Kochen und Einkaufen."
+      },
+      "03": {
+        "title": "Team und Einarbeitung",
+        "body": "Geben Sie der Brigade eine klarere Grundlage zum Ausführen, Lernen und für weniger Abhängigkeit von nur einer Person.",
+        "detail": "Bessere Delegation und einfacheres Onboarding."
+      },
+      "04": {
+        "title": "Klarere Zahlen",
+        "body": "Verstehen Sie Kosten, Inventar und Margen besser, ohne zehn Dateien zu öffnen oder am Schreibtisch zu leben.",
+        "detail": "Mehr Sicherheit bei den wichtigen Entscheidungen."
       }
     }
+  },
+  "Waitlist": {
+    "eyebrow": "Kontakt hinterlassen",
+    "title": "Wenn Le Sous Chef zu Ihrer Küche passen könnte, melden wir uns, sobald der Zugang öffnet.",
+    "subtitle": "Wir stehen kurz vor dem Produktstart. Dadurch können wir eng mit Küchen sprechen, die früh einsteigen, prüfen wollen ob es passt und die Entwicklung mitprägen möchten.",
+    "benefit_1": "Früher Zugang für Küchen mit echtem Interesse.",
+    "benefit_2": "Direkter Kontakt, wenn wir etwas Konkretes zeigen können.",
+    "benefit_3": "Eine nähere Phase, um zu verstehen, wie Sie heute arbeiten.",
+    "nameLabel": "Name",
+    "restaurantLabel": "Restaurant",
+    "roleLabel": "Rolle",
+    "emailLabel": "E-Mail",
+    "namePlaceholder": "Ihr Name",
+    "restaurantPlaceholder": "Name des Restaurants",
+    "rolePlaceholder": "Chef-Eigentümer, Inhaber, Manager...",
+    "emailPlaceholder": "ihre@email.com",
+    "submit": "Ich möchte kontaktiert werden",
+    "note": "Kein Spam. Wir schreiben nur, wenn es etwas Relevantes für Ihre Küche gibt.",
+    "successTitle": "Danke.",
+    "successBody": "Wir haben Ihre Angaben erhalten. Wir melden uns, sobald der Zugang öffnet oder wir Ihnen etwas Konkretes zeigen können."
   },
   "solutions": {
     "badge": "Drei Systeme. Drei Hebel.",
@@ -149,7 +214,9 @@
     "tagline": "SYSTEMS THAT BREATHE"
   },
   "Metadata": {
-    "keywords": "Gastro-Consulting, Restaurant Data Intelligence, Profit Optimization, Restaurantberatung Lüneburg, Wirtschaftlichkeit"
+    "title": "Betriebssoftware für unabhängige Küchen",
+    "description": "Mehr Ordnung im Küchenalltag, klarere Zahlen und mehr Kontrolle im Betrieb. Für Inhaber und Chef-Eigentümer unabhängiger Restaurants.",
+    "keywords": "betriebssoftware kuche, restaurant management unabhangig, rezepte inventar margen, chef eigentumer software, le sous chef"
   },
   "ShieldCalculator": {
     "title_input": "Stoppen Sie den Verlust.",
