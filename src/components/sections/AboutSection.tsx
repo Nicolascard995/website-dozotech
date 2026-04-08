@@ -21,12 +21,12 @@ export default function AboutSection() {
                             src="/images/consultant_profile.png"
                             alt="Le Sous Chef"
                             fill
-                            quality={88}
+                            priority
+                            quality={95}
                             sizes="(min-width: 1280px) 520px, (min-width: 1024px) 42vw, (min-width: 640px) 72vw, 92vw"
                             className="object-cover object-center grayscale"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-ink/72 via-transparent to-ink/18 z-10" />
-                        <div className="absolute inset-0 z-10 bg-black/8 backdrop-blur-[0.8px]" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-ink/62 via-transparent to-ink/10 z-10" />
                         <div className="absolute bottom-0 left-0 right-0 z-20 p-8 md:p-10">
                             <p className="font-display italic text-[28px] md:text-[34px] leading-tight text-cream max-w-[420px]">
                                 {t('image_quote')}
