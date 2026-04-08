@@ -1,102 +1,68 @@
 'use client';
-import { useRef, useState, useEffect } from 'react';
+
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import { motion, useInView } from 'framer-motion';
-import TiltCard from '../atoms/TiltCard';
+import ScrollReveal from '../atoms/ScrollReveal';
 
 export default function AboutSection() {
- const t = useTranslations('About');
- const containerRef = useRef<HTMLDivElement>(null);
- const isInView = useInView(containerRef, { once: true, amount: 0.5 });
- const [isFlipped, setIsFlipped] = useState(false);
+    const t = useTranslations('About');
+    const principles = ['principle_1', 'principle_2', 'principle_3'] as const;
 
- useEffect(() => {
- if (isInView) {
- const timer = setTimeout(() => {
- setIsFlipped(true);
- }, 1000);
- return () => clearTimeout(timer);
- }
- }, [isInView]);
+    return (
+        <section
+            id="about"
+            className="py-24 md:py-32 bg-cream overflow-hidden relative"
+            style={{ paddingLeft: 'clamp(20px,5vw,80px)', paddingRight: 'clamp(20px,5vw,80px)' }}
+        >
+            <div className="max-w-[1200px] mx-auto grid lg:grid-cols-[0.95fr_1.05fr] gap-14 lg:gap-16 items-center">
+                <ScrollReveal mode="zoom">
+                    <div className="relative overflow-hidden rounded-[28px] bg-ink min-h-[420px]">
+                        <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/15 to-transparent z-10" />
+                        <Image
+                            src="/images/chef_profile.png"
+                            alt="Le Sous Chef"
+                            fill
+                            sizes="(max-width: 1024px) 100vw, 45vw"
+                            className="object-cover grayscale"
+                        />
+                        <div className="absolute bottom-0 left-0 right-0 z-20 p-8 md:p-10">
+                            <p className="font-display italic text-[28px] md:text-[34px] leading-tight text-cream max-w-[420px]">
+                                {t('image_quote')}
+                            </p>
+                        </div>
+                    </div>
+                </ScrollReveal>
 
- return (
- <section className="py-32 bg-cream overflow-hidden relative">
- <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#111] to-transparent z-0 pointer-events-none" />
+                <ScrollReveal mode="slide-up">
+                    <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-ember mb-4">
+                        {t('badge')}
+                    </p>
+                    <h2
+                        className="font-display italic text-ink leading-[1.08] mb-8"
+                        style={{ fontSize: 'clamp(34px,4vw,58px)' }}
+                    >
+                        {t('title')}
+                    </h2>
 
- <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center relative z-10">
- <div className="relative order-2 md:order-1 perspective-1000" ref={containerRef}>
- <TiltCard className="rounded-3xl">
- <motion.div
- className="aspect-[4/5] rounded-3xl relative preserve-3d transition-all duration-700 group border border-white/10 cursor-pointer shadow-2xl"
- animate={{ rotateY: isFlipped ? 180 : 0 }}
- transition={{ duration: 0.8, ease: "easeInOut" }}
- style={{ transformStyle: 'preserve-3d' }}
- onClick={() => setIsFlipped(!isFlipped)}
- >
- {/* Front Face: Chef */}
- <div className="absolute inset-0 backface-hidden rounded-3xl overflow-hidden" style={{ backfaceVisibility: 'hidden', zIndex: 2 }}>
- <div className="absolute inset-0 bg-ember/10 mix-blend-overlay z-20 pointer-events-none"></div>
- <img
- src="/images/chef_profile.png"
- alt="The Chef"
- className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
- />
- <div className="absolute bottom-6 left-6 right-6 p-6 rounded-2xl border border-white/5 z-30">
- <p className="text-white font-bold tracking-tight font-display">{t('image_quote')}</p>
- </div>
- </div>
+                    <div className="space-y-6 text-[17px] leading-relaxed text-ink-mid font-light">
+                        <p>{t('description1')}</p>
+                        <p className="border-l-2 border-ember pl-5 font-display italic text-[28px] leading-snug text-ink">
+                            {t('quote')}
+                        </p>
+                        <p>{t('description2')}</p>
+                    </div>
 
- {/* Back Face: Consultant */}
- <div
- className="absolute inset-0 backface-hidden rounded-3xl overflow-hidden"
- style={{
- backfaceVisibility: 'hidden',
- transform: 'rotateY(180deg)',
- zIndex: 1
- }}
- >
- <div className="absolute inset-0 bg-ember/5 mix-blend-overlay z-20 pointer-events-none"></div>
- <img
- src="/images/consultant_profile.png"
- alt="The Consultant"
- style={{ objectPosition: '75% center' }}
- className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
- />
- <div className="absolute bottom-6 left-6 right-6 p-6 rounded-2xl border border-white/5 z-30">
- <p className="text-white font-bold tracking-tight font-display">&quot;Efficiency is the new flavor.&quot;</p>
- </div>
- </div>
- </motion.div>
- </TiltCard>
-
- {/* Neon Pulse Badge */}
- <div className="absolute -top-6 -right-6 w-32 h-32 rounded-full flex items-center justify-center border border-ember/30 z-30 shadow-[0_0_30px_rgba(212,255,0,0.2)]">
- <div className="absolute inset-0 rounded-full border border-ember/50 animate-ping opacity-20"></div>
- <div className="text-center relative">
- <span className="block text-ember font-mono font-bold text-4xl">5</span>
- <span className="text-[10px] text-slate-400 uppercase tracking-tighter font-bold mt-1 block">{t('efficiency_label')}</span>
- </div>
- </div>
- </div>
-
- <div className="order-1 md:order-2">
- <span className="text-ember font-mono text-sm tracking-widest uppercase mb-4 block">{t('badge')}</span>
- <h2 className="text-5xl md:text-6xl font-black text-white tracking-tighter leading-none mb-8">
- {t('title')}
- </h2>
- <div className="space-y-6 text-slate-400 text-lg font-light leading-relaxed font-sans">
- <p>
- {t('description1')}
- </p>
- <p className="border-l-4 border-ember pl-6 italic text-white/90 text-xl font-display">
- {t('quote')}
- </p>
- <p className="text-gray-300 mb-6 font-space-grotesk text-lg leading-relaxed">
- {t("description2")}
- </p>
- </div>
- </div>
- </div>
- </section>
- );
+                    <div className="mt-10 border-t border-cream-dark/90">
+                        {principles.map((principle) => (
+                            <div key={principle} className="py-4 border-b border-cream-dark/90">
+                                <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-ink">
+                                    {t(principle)}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
+                </ScrollReveal>
+            </div>
+        </section>
+    );
 }

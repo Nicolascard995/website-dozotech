@@ -6,20 +6,20 @@ export const metadata = {
     metadataBase: new URL('https://lesouschef.com'),
     title: {
         template: '%s | Le Sous Chef',
-        default: 'Le Sous Chef — Kitchen OS for independent restaurants'
+        default: 'Le Sous Chef'
     },
-    description: 'Built by a chef, for chefs. The operating system that gives you back the reason you cook.',
+    description: 'Operations software for independent kitchens.',
     openGraph: {
-        title: 'Le Sous Chef — Kitchen OS for independent restaurants',
-        description: 'Built by a chef, for chefs. The operating system that gives you back the reason you cook.',
+        title: 'Le Sous Chef',
+        description: 'Operations software for independent kitchens.',
         url: 'https://lesouschef.com',
         siteName: 'Le Sous Chef',
         type: 'website',
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Le Sous Chef — Kitchen OS for independent restaurants',
-        description: 'Built by a chef, for chefs. The operating system that gives you back the reason you cook.',
+        title: 'Le Sous Chef',
+        description: 'Operations software for independent kitchens.',
     },
 };
 

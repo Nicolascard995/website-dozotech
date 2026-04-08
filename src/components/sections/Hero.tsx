@@ -1,4 +1,5 @@
 'use client';
+
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 
@@ -26,8 +27,7 @@ export default function Hero() {
     const t = useTranslations('Hero');
 
     return (
-        <section className="relative min-h-screen flex flex-col justify-center overflow-hidden">
-            {/* Video background */}
+        <section className="relative min-h-screen flex items-end overflow-hidden">
             <div className="absolute inset-0 z-0">
                 <video
                     className="absolute inset-0 w-full h-full object-cover"
@@ -39,57 +39,61 @@ export default function Hero() {
                 >
                     <source src="/video/Chef_s_Kitchen_Pass_Timelapse_Video.mp4" type="video/mp4" />
                 </video>
-                {/* Dark overlay */}
-                <div className="absolute inset-0 bg-gradient-to-b from-ink/70 via-ink/50 to-ink/80" />
+                <div className="absolute inset-0 bg-gradient-to-b from-ink/60 via-ink/55 to-ink/88" />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(217,79,43,0.22),transparent_36%)]" />
             </div>
 
-            {/* Content */}
             <div
-                className="relative z-10 flex flex-col w-full pt-14 pb-24"
+                className="relative z-10 flex flex-col w-full pt-28 pb-24"
                 style={{ paddingLeft: 'clamp(20px, 5vw, 80px)', paddingRight: 'clamp(20px, 5vw, 80px)' }}
             >
-                {/* Eyebrow */}
-                <div className="animate-fade-up d1 flex items-center gap-2 text-ember font-mono text-xs tracking-widest uppercase mb-6">
-                    <KnifeIcon />
-                    <span>{t('eyebrow')}</span>
-                </div>
+                <div className="max-w-[760px]">
+                    <div className="animate-fade-up d1 flex items-center gap-2 text-ember font-mono text-xs tracking-widest uppercase mb-6">
+                        <KnifeIcon />
+                        <span>{t('eyebrow')}</span>
+                    </div>
 
-                {/* H1 */}
-                <h1
-                    className="animate-fade-up d2 font-display font-normal text-cream leading-[1.07] mb-8"
-                    style={{ fontSize: 'clamp(44px, 7vw, 84px)' }}
-                >
-                    <span className="block">{t('line1')}</span>
-                    <span className="block italic">{t('line2')}</span>
-                    <span className="block">{t('line3')}</span>
-                </h1>
+                    <p className="animate-fade-up d2 font-mono text-[12px] uppercase tracking-[0.42em] text-cream/78 mb-5">
+                        Le Sous Chef
+                    </p>
 
-                {/* Subtitle */}
-                <p
-                    className="animate-fade-up d3 font-body font-light text-cream/75 max-w-[500px] mb-10 leading-relaxed"
-                    style={{ fontSize: 'clamp(16px, 2vw, 20px)' }}
-                >
-                    {t('subtitle')}
-                </p>
-
-                {/* CTAs */}
-                <div className="animate-fade-up d4 flex flex-wrap gap-4">
-                    <a
-                        href="#contact"
-                        className="bg-ember text-cream text-sm font-medium px-6 py-3 rounded-[3px] hover:opacity-90 transition-opacity"
+                    <h1
+                        className="animate-fade-up d3 font-display font-normal text-cream leading-[1.02] mb-8"
+                        style={{ fontSize: 'clamp(46px, 7vw, 92px)' }}
                     >
-                        {t('cta_primary')}
-                    </a>
-                    <a
-                        href="#how-it-works"
-                        className="border border-cream/40 text-cream bg-transparent text-sm font-medium px-6 py-3 rounded-[3px] hover:bg-cream/10 transition-colors"
+                        <span className="block">{t('line1')}</span>
+                        <span className="block italic">{t('line2')}</span>
+                        <span className="block">{t('line3')}</span>
+                    </h1>
+
+                    <p
+                        className="animate-fade-up d4 font-body font-light text-cream/76 max-w-[620px] mb-10 leading-relaxed"
+                        style={{ fontSize: 'clamp(17px, 2vw, 21px)' }}
                     >
-                        {t('cta_secondary')}
-                    </a>
+                        {t('subtitle')}
+                    </p>
+
+                    <div className="animate-fade-up d5 flex flex-wrap gap-4">
+                        <a
+                            href="#contact"
+                            className="bg-ember text-cream text-sm font-medium px-6 py-3 rounded-[3px] hover:opacity-90 transition-opacity"
+                        >
+                            {t('cta_primary')}
+                        </a>
+                        <a
+                            href="#how-it-works"
+                            className="border border-cream/40 text-cream bg-transparent text-sm font-medium px-6 py-3 rounded-[3px] hover:bg-cream/10 transition-colors"
+                        >
+                            {t('cta_secondary')}
+                        </a>
+                    </div>
+
+                    <p className="animate-fade-up d5 mt-6 font-mono text-[11px] uppercase tracking-[0.24em] text-cream/56">
+                        {t('support')}
+                    </p>
                 </div>
             </div>
 
-            {/* Scroll indicator */}
             <motion.div
                 className="animate-fade-up d5 absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10 text-cream/50"
                 animate={{ y: [0, 6, 0] }}

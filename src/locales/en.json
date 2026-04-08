@@ -1,7 +1,7 @@
 {
   "Navbar": {
     "methodology": "Methodology",
-    "solutions": "Solutions",
+    "solutions": "What it includes",
     "cases": "Cases",
     "blog": "Blog",
     "audit": "Book Audit",
@@ -9,7 +9,7 @@
     "how_it_works": "How it works",
     "results": "Results",
     "contact": "Contact",
-    "cta": "Get early access"
+    "cta": "Leave your details"
   },
   "Hero": {
     "title_part1": "Sell more.",
@@ -19,45 +19,97 @@
     "subtitle_suffix": ". I stop that leak from outside your operation, without stepping into your kitchen or interfering with your daily management.",
     "remote": "100% remote. Silent operation.",
     "cta": "Reclaim my margin",
-    "eyebrow": "Built by a chef",
-    "line1": "The kitchen OS that",
-    "line2": "gives you back",
-    "line3": "the reason you cook.",
-    "subtitle": "Le Sous Chef handles the admin, the costs, the chaos — so you can focus on the food.",
-    "cta_primary": "Join the waitlist",
+    "eyebrow": "For independent kitchens",
+    "line1": "Order for the kitchen.",
+    "line2": "Control for",
+    "line3": "the business.",
+    "subtitle": "A platform for team routines, recipes, inventory and core numbers, built for owners and chef-owners still close to daily service.",
+    "cta_primary": "I want to hear from you",
     "cta_secondary": "See how it works",
-    "scroll": "scroll"
+    "scroll": "scroll",
+    "support": "Early stage. Early access and close contact."
   },
   "FounderBanner": {
-    "text": "• PIONEER PROGRAM: SEEKING MY FIRST 5 SUCCESS STORIES • NO-RISK AUDIT • NO TAX ACCESS REQUIRED •"
+    "text": "• REAL KITCHENS • CLEAR SYSTEMS • LESS FIREFIGHTING • MORE CONTROL •"
   },
   "About": {
-    "badge": "Chef + Data Head",
-    "title": "Kitchen-tested. Data-refined.",
-    "description1": "I am not a corporate consultant. I’ve founded dark kitchens and led brigades from Tulum to Germany. I know the heat of the service and the frustration of working for free because the costs don't add up.",
-    "quote": "\"Good food doesn't sell itself. It sells if it leaves real money in your pocket.\"",
-    "description2": "I merged fine dining discipline with linear algebra. My job is to let you focus on the pass while I ensure every ticket generates net profit, not just gross revenue.",
-    "image_quote": "I speak your language: Order up. Margin up.",
-    "efficiency_label": "Pioneer Spots Open"
+    "badge": "About the project",
+    "title": "Le Sous Chef is built between service and systems.",
+    "description1": "We are a team that knows small brigades, tight inventory and weeks where almost everything still depends on the chef or owner.",
+    "quote": "\"You don't need another layer of bureaucracy. You need more clarity to run the kitchen better.\"",
+    "description2": "That is why we are building a tool that fits the way independent kitchens already work: it brings order to recipes, inventory, team routines and numbers without asking you to become software admin.",
+    "image_quote": "Real kitchens up front. Clear systems underneath.",
+    "efficiency_label": "Pioneer Spots Open",
+    "principle_1": "Built for independent kitchens and small groups.",
+    "principle_2": "Made for teams that still work close to service.",
+    "principle_3": "Designed to protect margins without adding desk time."
   },
   "Methodology": {
-    "title": "Digital Mise en Place",
-    "subtitle": "Just like in the kitchen: if there's no prep, there's no service. Before selling more, we get your house in order.",
+    "badge": "How it works",
+    "title": "A clearer operating base with less daily chaos.",
+    "subtitle": "Le Sous Chef is not here to replace your judgement. It is here to organize operations so your team can work with more structure and visibility.",
     "steps": {
       "01": {
-        "title": "Clean Up",
-        "desc": "We eliminate digital and operational noise. Identifying what's redundant, what's missing, and what's holding back your growth."
+        "title": "We understand your operation",
+        "desc": "We look at how your kitchen works today: team routines, recipes, inventory and service flow."
       },
       "02": {
-        "title": "Order",
-        "desc": "Data in its place. We implement measurement systems so you know exactly what's happening in your business in real-time."
+        "title": "We organize the base",
+        "desc": "We structure the key information so the team has context and the business has more clarity."
       },
       "03": {
-        "title": "Execution",
-        "desc": "With everything ready, we open the tap. Precise strategies on a solid foundation to scale without breaking operations.",
-        "cta": "See my diagnosis"
+        "title": "You operate with more control",
+        "desc": "When access opens, we stay close through implementation so using it does not mean more bureaucracy."
+      }
+    },
+    "footnote": "Early stage also means more proximity: less commercial noise and more useful conversation about whether it fits your kitchen."
+  },
+  "Includes": {
+    "badge": "What it includes",
+    "title": "Everything needed to organize operations without turning them into heavy software.",
+    "intro": "Built for kitchens where the chef or owner is still close to service and needs more structure to delegate, train the team and protect margins.",
+    "items": {
+      "01": {
+        "title": "Operational order",
+        "body": "Bring together what is currently scattered across paper, WhatsApp, memory and loose spreadsheets.",
+        "detail": "Routines, context and less daily firefighting."
+      },
+      "02": {
+        "title": "Recipes and inventory",
+        "body": "Make recipes, yields, ingredients and stock movement clearer so the team works with less improvisation.",
+        "detail": "More consistency in cooking and purchasing."
+      },
+      "03": {
+        "title": "Team and training",
+        "body": "Give the brigade a clearer base to execute, learn and depend less on a single person.",
+        "detail": "Better delegation and simpler onboarding."
+      },
+      "04": {
+        "title": "Clearer numbers",
+        "body": "Understand costs, inventory and margins without opening ten files or living at a desk.",
+        "detail": "More judgement to decide what matters first."
       }
     }
+  },
+  "Waitlist": {
+    "eyebrow": "Leave your details",
+    "title": "If Le Sous Chef could help your kitchen, we'll reach out when access opens.",
+    "subtitle": "We're finishing the product now. That lets us stay close to kitchens that want early access, want to see if it's a fit, and want to help shape it.",
+    "benefit_1": "Early access for kitchens with real interest.",
+    "benefit_2": "Direct contact when we have something concrete to show.",
+    "benefit_3": "A closer stage for understanding how you operate today.",
+    "nameLabel": "Name",
+    "restaurantLabel": "Restaurant",
+    "roleLabel": "Role",
+    "emailLabel": "Email",
+    "namePlaceholder": "Your name",
+    "restaurantPlaceholder": "Restaurant name",
+    "rolePlaceholder": "Chef-owner, owner, manager...",
+    "emailPlaceholder": "your@email.com",
+    "submit": "I want to hear from you",
+    "note": "No spam. We only write when there is something relevant for your kitchen.",
+    "successTitle": "Thanks.",
+    "successBody": "We received your details. We'll reach out when access opens or when we have something concrete to show."
   },
   "solutions": {
     "badge": "Three Systems. Three Levers.",
@@ -162,7 +214,9 @@
     "tagline": "SYSTEMS THAT BREATHE"
   },
   "Metadata": {
-    "keywords": "Gastro-Consulting, Restaurant Margin, Cost Audit, Profit Optimization, Discrete Management"
+    "title": "Operations software for independent kitchens",
+    "description": "Bring order to kitchen operations, understand your numbers and work with more control. Built for owners and chef-owners of independent restaurants.",
+    "keywords": "operations software kitchen, independent restaurant management, recipes inventory margins, chef owner software, le sous chef"
   },
   "ShieldCalculator": {
     "title_input": "Stop burning cash.",

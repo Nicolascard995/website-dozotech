@@ -4,57 +4,32 @@ export default function JsonLd() {
         "@graph": [
             {
                 "@type": "Organization",
-                "name": "Dozo Tech",
-                "url": "https://dozo.tech",
-                "logo": "https://dozo.tech/logo.png",
-                "sameAs": [
-                    "https://twitter.com/dozotech",
-                    "https://linkedin.com/company/dozotech"
-                ],
+                "name": "Le Sous Chef",
+                "url": "https://lesouschef.com",
                 "contactPoint": {
                     "@type": "ContactPoint",
-                    "telephone": "+1-555-0199",
-                    "email": "contact@dozo.tech",
-                    "contactType": "customer service",
+                    "email": "hello@lesouschef.com",
+                    "contactType": "sales",
                     "availableLanguage": ["English", "Spanish", "German"]
                 }
             },
             {
-                "@type": "Service",
-                "name": "Auditoría Remota Gastronómica",
-                "provider": {
-                    "@type": "Organization",
-                    "name": "Dozo Tech"
+                "@type": "WebSite",
+                "name": "Le Sous Chef",
+                "url": "https://lesouschef.com",
+                "description": "Operations software for independent restaurant kitchens."
+            },
+            {
+                "@type": "SoftwareApplication",
+                "name": "Le Sous Chef",
+                "applicationCategory": "BusinessApplication",
+                "operatingSystem": "Web",
+                "description": "Le Sous Chef helps independent kitchens organize recipes, inventory, team routines and core numbers with more operational clarity.",
+                "audience": {
+                    "@type": "Audience",
+                    "audienceType": "Restaurant owners and chef-owners"
                 },
-                "areaServed": "Worldwide",
-                "hasOfferCatalog": {
-                    "@type": "OfferCatalog",
-                    "name": "Restaurant Optimization Services",
-                    "itemListElement": [
-                        {
-                            "@type": "Offer",
-                            "itemOffered": {
-                                "@type": "Service",
-                                "name": "Invisible Customer Radar"
-                            }
-                        },
-                        {
-                            "@type": "Offer",
-                            "itemOffered": {
-                                "@type": "Service",
-                                "name": "Reservation Shield"
-                            }
-                        },
-                        {
-                            "@type": "Offer",
-                            "itemOffered": {
-                                "@type": "Service",
-                                "name": "Hidden Money Detector"
-                            }
-                        }
-                    ]
-                },
-                "description": "Data-driven consulting to optimize restaurant profitability using AI and algorithmic audits."
+                "url": "https://lesouschef.com"
             }
         ]
     };

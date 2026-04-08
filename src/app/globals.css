@@ -40,7 +40,14 @@ body::after {
   from { opacity: 0; transform: translateY(22px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-20%); }
+}
+
 .animate-fade-up { opacity: 0; animation: fadeUp 0.7s ease forwards; }
+.animate-marquee { animation: marquee 24s linear infinite; }
 .d1 { animation-delay: 0.05s; }
 .d2 { animation-delay: 0.18s; }
 .d3 { animation-delay: 0.32s; }

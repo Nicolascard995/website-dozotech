@@ -1,9 +1,10 @@
 'use client';
+
 import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
-import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 import LanguageSwitcher from '@/components/atoms/LanguageSwitcher';
+import { Link } from '@/i18n/routing';
 
 export default function Navbar() {
     const t = useTranslations('Navbar');
@@ -17,64 +18,66 @@ export default function Navbar() {
     }, []);
 
     const navLinks = [
-        { href: '#about', label: t('about') },
+        { href: '#includes', label: t('solutions') },
         { href: '#how-it-works', label: t('how_it_works') },
-        { href: '#results', label: t('results') },
+        { href: '#about', label: t('about') },
         { href: '#contact', label: t('contact') },
     ];
+    const isLightChrome = scrolled || isOpen;
+    const brandClass = isLightChrome ? 'text-ink' : 'text-cream';
+    const linkClass = isLightChrome
+        ? 'text-ink-mid hover:text-ink'
+        : 'text-cream/75 hover:text-cream';
 
     return (
         <nav
             className={`fixed top-0 w-full z-50 h-14 flex items-center transition-all duration-300 ${
-                scrolled
-                    ? 'bg-cream/92 backdrop-blur-md border-b border-cream-dark'
-                    : 'bg-transparent'
+                scrolled ? 'bg-cream/92 backdrop-blur-md border-b border-cream-dark' : 'bg-transparent'
             }`}
         >
             <div className="w-full max-w-7xl mx-auto px-6 flex items-center justify-between">
-                {/* Wordmark */}
                 <Link
                     href="/"
-                    className="font-mono text-sm tracking-widest font-medium text-cream hover:opacity-70 transition-opacity"
+                    className={`font-mono text-sm tracking-[0.32em] uppercase font-medium transition-opacity hover:opacity-70 ${brandClass}`}
                 >
                     LE SOUS CHEF
                 </Link>
 
-                {/* Desktop nav links */}
                 <div className="hidden md:flex items-center gap-8">
                     {navLinks.map(({ href, label }) => (
                         <a
                             key={href}
                             href={href}
-                            className="font-mono text-xs tracking-wide text-cream/70 hover:text-cream transition-colors"
+                            className={`font-mono text-[11px] uppercase tracking-[0.22em] transition-colors ${linkClass}`}
                         >
                             {label}
                         </a>
                     ))}
                 </div>
 
-                {/* Desktop right */}
                 <div className="hidden md:flex items-center gap-6">
-                    <LanguageSwitcher />
+                    <LanguageSwitcher theme={isLightChrome ? 'light' : 'dark'} />
                     <a
                         href="#contact"
-                        className="bg-cream text-ink text-xs font-medium px-4 py-2 rounded-[3px] hover:opacity-80 transition-opacity"
+                        className={`text-xs font-medium px-4 py-2 rounded-[3px] transition-colors ${
+                            isLightChrome
+                                ? 'bg-ink text-cream hover:bg-ink/90'
+                                : 'bg-cream text-ink hover:bg-cream/90'
+                        }`}
                     >
                         {t('cta')}
                     </a>
                 </div>
 
-                {/* Mobile toggle */}
                 <button
                     onClick={() => setIsOpen(!isOpen)}
-                    className="md:hidden text-cream p-1"
+                    className={`md:hidden p-1 transition-colors ${brandClass}`}
                     aria-label="Toggle menu"
                 >
                     {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
                 </button>
             </div>
 
-            {/* Mobile menu overlay */}
             <div
                 className={`fixed inset-0 bg-cream z-40 flex flex-col justify-center items-center md:hidden transition-all duration-300 ${
                     isOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'

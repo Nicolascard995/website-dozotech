@@ -6,43 +6,65 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const subjects: Record<string, string> = {
-    en: "You're on the list — Le Sous Chef",
-    de: "Du bist auf der Liste — Le Sous Chef",
-    es: "Estás en la lista — Le Sous Chef",
+    en: 'Thanks for your interest — Le Sous Chef',
+    de: 'Danke für Ihr Interesse — Le Sous Chef',
+    es: 'Gracias por tu interés — Le Sous Chef',
 };
 
-const confirmationBodies: Record<string, string> = {
-    en: `Hey — you're on the list.
+const confirmationBodies: Record<string, (lead: {
+    name: string;
+    restaurant: string;
+    role: string;
+}) => string> = {
+    en: ({ name, restaurant, role }) => `Hi ${name}.
 
-We're launching city by city, starting in Hamburg and Lüneburg. When we get to your city, you'll be among the first to know.
+Thanks for leaving your details for Le Sous Chef.
 
-This isn't a newsletter. It's a heads-up from one cook to another — when the tool is ready for your kitchen, we'll reach you directly.
+We're finishing the product and still in an early stage. That lets us stay close to independent kitchens and small restaurant groups that want early access and want to help shape how the tool evolves.
 
-Got questions or want to talk shop? Just reply to this email.
+We recorded your interest for:
+Restaurant: ${restaurant}
+Role: ${role}
+
+When we have something concrete to show, we'll reach out directly.
+
+If you want to share more context about your kitchen, just reply to this email.
 
 Nicolás
 Le Sous Chef
-(also still cooking)`,
+(still cooking)`,
 
-    de: `Hey — du bist dabei.
+    de: ({ name, restaurant, role }) => `Hallo ${name}.
 
-Wir starten Stadt für Stadt, zuerst in Hamburg und Lüneburg. Wenn wir deine Stadt erreichen, bist du unter den Ersten, die es erfahren.
+Danke, dass Sie Ihre Kontaktdaten für Le Sous Chef hinterlassen haben.
 
-Das ist kein Newsletter. Es ist ein direkter Hinweis von Koch zu Koch — wenn das Tool für deine Küche bereit ist, melden wir uns bei dir.
+Wir finalisieren das Produkt gerade und befinden uns noch in einer frühen Phase. Dadurch können wir eng mit unabhängigen Küchen und kleinen Gastronomiegruppen sprechen, die früh einsteigen und die Entwicklung mitprägen möchten.
 
-Fragen oder einfach quatschen? Antwort einfach auf diese Mail.
+Wir haben Ihr Interesse erfasst für:
+Restaurant: ${restaurant}
+Rolle: ${role}
+
+Sobald wir etwas Konkretes zeigen können, melden wir uns direkt.
+
+Wenn Sie uns mehr Kontext zu Ihrer Küche geben möchten, antworten Sie einfach auf diese E-Mail.
 
 Nicolás
 Le Sous Chef
 (koche immer noch selbst)`,
 
-    es: `Hola — ya estás en la lista.
+    es: ({ name, restaurant, role }) => `Hola ${name}.
 
-Arrancamos ciudad por ciudad, empezando por Hamburg y Lüneburg. Cuando lleguemos a tu ciudad, vos vas a ser de los primeros en saberlo.
+Gracias por dejar tu contacto para Le Sous Chef.
 
-Esto no es un newsletter. Es un aviso directo de chef a chef — cuando la herramienta esté lista para tu cocina, te contactamos directamente.
+Estamos terminando el producto y seguimos en una etapa temprana. Eso nos permite hablar de cerca con cocinas independientes y pequeños grupos gastronómicos que quieran entrar antes y ayudarnos a darle forma.
 
-¿Preguntas o querés hablar? Respondé este email.
+Registramos tu interés para:
+Restaurante: ${restaurant}
+Cargo: ${role}
+
+Cuando tengamos algo concreto para mostrarte, te vamos a escribir directamente.
+
+Si querés sumar más contexto sobre tu operación, respondé este email.
 
 Nicolás
 Le Sous Chef
@@ -50,7 +72,7 @@ Le Sous Chef
 };
 
 export async function POST(req: NextRequest) {
-    let body: { name?: string; email?: string; lang?: string };
+    let body: { name?: string; restaurant?: string; role?: string; email?: string; lang?: string };
 
     try {
         body = await req.json();
@@ -58,10 +80,16 @@ export async function POST(req: NextRequest) {
         return NextResponse.json({ error: 'Invalid JSON' }, { status: 400 });
     }
 
-    const { name, email, lang = 'en' } = body;
+    const { name, restaurant, role, email, lang = 'en' } = body;
 
     if (!name || !name.trim()) {
         return NextResponse.json({ error: 'Name is required' }, { status: 400 });
+    }
+    if (!restaurant || !restaurant.trim()) {
+        return NextResponse.json({ error: 'Restaurant is required' }, { status: 400 });
+    }
+    if (!role || !role.trim()) {
+        return NextResponse.json({ error: 'Role is required' }, { status: 400 });
     }
     if (!email || !email.trim()) {
         return NextResponse.json({ error: 'Email is required' }, { status: 400 });
@@ -73,28 +101,31 @@ export async function POST(req: NextRequest) {
     const locale = ['en', 'de', 'es'].includes(lang) ? lang : 'en';
     const cleanEmail = email.trim().toLowerCase();
     const cleanName = name.trim();
+    const cleanRestaurant = restaurant.trim();
+    const cleanRole = role.trim();
 
     try {
-        // 1. Confirmation email to the lead
         await resend.emails.send({
             from: 'Nicolás @ Le Sous Chef <hello@lesouschef.com>',
             to: cleanEmail,
             subject: subjects[locale],
-            text: confirmationBodies[locale],
+            text: confirmationBodies[locale]({
+                name: cleanName,
+                restaurant: cleanRestaurant,
+                role: cleanRole,
+            }),
         });
 
-        // 2. Internal notification
         const notifyEmail = process.env.NOTIFY_EMAIL;
         if (notifyEmail) {
             await resend.emails.send({
                 from: 'Nicolás @ Le Sous Chef <hello@lesouschef.com>',
                 to: notifyEmail,
-                subject: `New lead: ${cleanName} — ${cleanEmail} [${locale.toUpperCase()}]`,
-                text: `Name: ${cleanName}\nEmail: ${cleanEmail}\nLang: ${locale.toUpperCase()}\nTimestamp: ${new Date().toISOString()}`,
+                subject: `New lead: ${cleanRestaurant} — ${cleanName} [${locale.toUpperCase()}]`,
+                text: `Name: ${cleanName}\nRestaurant: ${cleanRestaurant}\nRole: ${cleanRole}\nEmail: ${cleanEmail}\nLang: ${locale.toUpperCase()}\nTimestamp: ${new Date().toISOString()}`,
             });
         }
 
-        // 3. Add to audience if configured
         const audienceId = process.env.RESEND_AUDIENCE_ID;
         if (audienceId && audienceId !== 'PLACEHOLDER') {
             await resend.contacts.create({
